@@ -1,0 +1,1 @@
+On the backend of every login requirement, there is a https post request being carried out. The information passed through to the post request is then used to authenticate a user and login them into the website. 
