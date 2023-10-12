@@ -1,5 +1,0 @@
-Whisper is a free and open-source Automatic Speech Recognition (ASR) system that has been trained on 680,000 hours of supervised data collected from the web. It is designed to be robust to accents, background noise, and technical language. The Whisper architecture is a simple end-to-end encoder-decoder Transformer. Input audio is split into 30-second chunks, converted into a log-Mel spectrogram, and then passed into an encoder. A decoder is trained to predict the corresponding text caption, intermixed with special tokens that direct the single model to perform tasks such as language identification, phrase-level timestamps, multilingual speech transcription, and to-English speech translation. Whisper's zero-shot performance across many diverse datasets is much more robust and makes 50% fewer errors than those models.
-
-Github: [openai/whisper](https://github.com/openai/whisper)
-Google Colab: [Pete Warden's Demo](https://colab.research.google.com/github/petewarden/openai-whisper-webapp/blob/main/OpenAI_Whisper_ASR_Demo.ipynb#scrollTo=deSAVvfJcWBo)
-Hugging Face spaces: 

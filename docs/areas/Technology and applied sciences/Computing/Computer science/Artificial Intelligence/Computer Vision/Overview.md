@@ -1,1 +1,0 @@
-Computer vision is a field of computer science that is concerned with the way computers can be made to understand digital images or videos. This is done by algorithms that are designed to process images and extract information from them. The information that can be extracted includes things like object recognition, scene understanding, and motion detection.
