@@ -7,23 +7,28 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <meta content="In this tutorial, we will be covering how to download all media from a specific Instagram profile along with captions and hashtags, then store this data in a SQLite database. This will allow us to store the data we scrape from Instagram to later be uploaded to Truth Social. We will be using the following tools:" name="description"/>
 <meta content="Harminder Singh Nijjar" name="author"/>
-<link href="https://harminder.dev/projects/Instagram%20account%20cloning/Truth%20Social/Downloading_Media/" rel="canonical"/>
-<link href="../../../.." rel="prev"/>
+<link href="https://harminder.dev/projects/Social%20media%20automation/Instagram/Account%20cloning/Truth%20Social/Downloading_Media/" rel="canonical"/>
+<link href="../../../../../Personal%20site/Adding%20assets/Additional%20CSS/setup-material-mkdocs-insiders-tailwind/" rel="prev"/>
 <link href="../Uploading_Media/" rel="next"/>
-<link href="../../../../assets/images/favicon.png" rel="icon"/>
+<link href="../../../../../../assets/images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.5.3, mkdocs-material-9.2.3+insiders-4.39.2" name="generator"/>
 <title>Downloading Media - Harminder Singh Nijjar</title>
-<link href="../../../../assets/stylesheets/main.b13eea88.min.css" rel="stylesheet"/>
-<link href="../../../../assets/stylesheets/palette.da3f46a0.min.css" rel="stylesheet"/>
+<link href="../../../../../../assets/stylesheets/main.b13eea88.min.css" rel="stylesheet"/>
+<link href="../../../../../../assets/stylesheets/palette.da3f46a0.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
 <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
-<link href="../../../../assets/_mkdocstrings.css" rel="stylesheet"/>
-<link href="../../../../css/tailwind.css" rel="stylesheet"/>
+<link href="../../../../../../assets/_mkdocstrings.css" rel="stylesheet"/>
+<link href="../../../../../../css/tailwind.css" rel="stylesheet"/>
+<link href="../../../../../../css/output.css" rel="stylesheet"/>
+<link href="../../../../../../docs/stylesheets/tailwind.css" rel="stylesheet"/>
+<link href="../../../../../../docs/stylesheets/output.css" rel="stylesheet"/>
+<link href="../../../../../../src/styles.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons" rel="stylesheet"/>
 <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
 <link href="https://cdn.jsdelivr.net/npm/flowbite@1.0.0/dist/flowbite.min.css" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
-<script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+<script>__md_scope=new URL("../../../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
 <script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-X0B1C5DM9K"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-X0B1C5DM9K",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-X0B1C5DM9K",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
 <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
 <meta content="website" property="og:type">
@@ -33,12 +38,12 @@
 <meta content="image/png" property="og:image:type">
 <meta content="1200" property="og:image:width"/>
 <meta content="630" property="og:image:height"/>
-<meta content="https://harminder.dev/projects/Instagram%20account%20cloning/Truth%20Social/Downloading_Media/" property="og:url"/>
+<meta content="https://harminder.dev/projects/Social%20media%20automation/Instagram/Account%20cloning/Truth%20Social/Downloading_Media/" property="og:url"/>
 <meta content="summary_large_image" property="twitter:card"/>
 <meta content="Downloading Media - Harminder Singh Nijjar" property="twitter.title"/>
 <meta content="In this tutorial, we will be covering how to download all media from a specific Instagram profile along with captions and hashtags, then store this data in a SQLite database. This will allow us to store the data we scrape from Instagram to later be uploaded to Truth Social. We will be using the following tools:" property="twitter:description"/>
-<meta content="https://harminder.dev/assets/images/social/projects/Instagram%20account%20cloning/Truth%20Social/Downloading_Media.png" property="twitter:image"/>
-</meta></meta></meta></meta></meta><meta content="Downloading Media" name="title"/><meta content="website" property="og:type"/><meta content="https://harminder.dev/projects/Instagram%20account%20cloning/Truth%20Social/Downloading_Media" property="og:url"/><meta content="Downloading Media" property="og:title"/><meta content="In this tutorial, we will be covering how to download all media from a specific Instagram profile along with captions and hashtags, then store this data in a SQLite database. This will allow us to store the data we scrape from Instagram to later be uploaded to Truth Social. We will be using the following tools:" property="og:description"/><meta content="summary_large_image" property="twitter:card"/><meta content="https://harminder.dev/projects/Instagram%20account%20cloning/Truth%20Social/Downloading_Media" property="twitter:url"/><meta content="Downloading Media" property="twitter:title"/><meta content="In this tutorial, we will be covering how to download all media from a specific Instagram profile along with captions and hashtags, then store this data in a SQLite database. This will allow us to store the data we scrape from Instagram to later be uploaded to Truth Social. We will be using the following tools:" property="twitter:description"/><meta content="../chrome_sv2FM6ThyT.png" property="twitter:image"/></head>
+<meta content="https://harminder.dev/assets/images/social/projects/Social%20media%20automation/Instagram/Account%20cloning/Truth%20Social/Downloading_Media.png" property="twitter:image"/>
+</meta></meta></meta></meta></meta><meta content="Downloading Media" name="title"/><meta content="website" property="og:type"/><meta content="https://harminder.dev/projects/Social%20media%20automation/Instagram/Account%20cloning/Truth%20Social/Downloading_Media" property="og:url"/><meta content="Downloading Media" property="og:title"/><meta content="In this tutorial, we will be covering how to download all media from a specific Instagram profile along with captions and hashtags, then store this data in a SQLite database. This will allow us to store the data we scrape from Instagram to later be uploaded to Truth Social. We will be using the following tools:" property="og:description"/><meta content="summary_large_image" property="twitter:card"/><meta content="https://harminder.dev/projects/Social%20media%20automation/Instagram/Account%20cloning/Truth%20Social/Downloading_Media" property="twitter:url"/><meta content="Downloading Media" property="twitter:title"/><meta content="In this tutorial, we will be covering how to download all media from a specific Instagram profile along with captions and hashtags, then store this data in a SQLite database. This will allow us to store the data we scrape from Instagram to later be uploaded to Truth Social. We will be using the following tools:" property="twitter:description"/><meta content="../chrome_sv2FM6ThyT.png" property="twitter:image"/></head>
 <body data-md-color-accent="indigo" data-md-color-primary="indigo" data-md-color-scheme="default" dir="ltr">
 <input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
@@ -52,7 +57,7 @@
 </div>
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
 <nav aria-label="Header" class="md-header__inner md-grid">
-<a aria-label="Harminder Singh Nijjar" class="md-header__button md-logo" data-md-component="logo" href="../../../.." title="Harminder Singh Nijjar">
+<a aria-label="Harminder Singh Nijjar" class="md-header__button md-logo" data-md-component="logo" href="../../../../../.." title="Harminder Singh Nijjar">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
 </a>
 <label class="md-header__button md-icon" for="__drawer">
@@ -138,7 +143,7 @@
 <div class="md-grid">
 <ul class="md-tabs__list">
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="../../../..">
+<a class="md-tabs__link" href="../../../../../..">
         
   
     
@@ -148,7 +153,7 @@
       </a>
 </li>
 <li class="md-tabs__item md-tabs__item--active">
-<a class="md-tabs__link" href="./">
+<a class="md-tabs__link" href="../../../../../Personal%20site/Adding%20assets/Additional%20CSS/setup-material-mkdocs-insiders-tailwind/">
           
   
     
@@ -158,7 +163,7 @@
         </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="../../../../areas/Culture%20and%20the%20arts/Recreation%20and%20entertainment/Games/Video%20games/Video%20game%20hardware%20platforms/Cloud%20games/Netflix%20Gaming/202210200020%20Netflix%20Gaming%20Resources/">
+<a class="md-tabs__link" href="../../../../../../areas/Culture%20and%20the%20arts/Recreation%20and%20entertainment/Games/Video%20games/Video%20game%20hardware%20platforms/Cloud%20games/Netflix%20Gaming/202210200020%20Netflix%20Gaming%20Resources/">
           
   
     
@@ -168,7 +173,7 @@
         </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="../../../../blog/">
+<a class="md-tabs__link" href="../../../../../../blog/">
           
   
     
@@ -189,7 +194,7 @@
 <div class="md-sidebar__inner">
 <nav aria-label="Navigation" class="md-nav md-nav--primary md-nav--lifted" data-md-level="0">
 <label class="md-nav__title" for="__drawer">
-<a aria-label="Harminder Singh Nijjar" class="md-nav__button md-logo" data-md-component="logo" href="../../../.." title="Harminder Singh Nijjar">
+<a aria-label="Harminder Singh Nijjar" class="md-nav__button md-logo" data-md-component="logo" href="../../../../../.." title="Harminder Singh Nijjar">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
 </a>
     Harminder Singh Nijjar
@@ -206,7 +211,7 @@
 </div>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../..">
+<a class="md-nav__link" href="../../../../../..">
 <span class="md-ellipsis">
     
   
@@ -240,32 +245,91 @@
 
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" id="__nav_2_1" type="checkbox"/>
-<label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../../../../Personal%20site/Adding%20assets/Additional%20CSS/setup-material-mkdocs-insiders-tailwind/">
 <span class="md-ellipsis">
     
   
-    Instagram account cloning
+    Personal site
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_2_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+<span class="md-ellipsis">
+    
+  
+    Social media automation
   
 
     
   </span>
 <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-expanded="true" aria-labelledby="__nav_2_1_label" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="__nav_2_1">
+<nav aria-expanded="true" aria-labelledby="__nav_2_2_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_2">
 <span class="md-nav__icon md-icon"></span>
             
   
-    Instagram account cloning
+    Social media automation
   
 
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" id="__nav_2_1_1" type="checkbox"/>
-<label class="md-nav__link" for="__nav_2_1_1" id="__nav_2_1_1_label" tabindex="0">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_2_2_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_2_1" id="__nav_2_2_1_label" tabindex="0">
+<span class="md-ellipsis">
+    
+  
+    Instagram
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_2_2_1_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_2_2_1">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    Instagram
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_2_2_1_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_2_1_1" id="__nav_2_2_1_1_label" tabindex="0">
+<span class="md-ellipsis">
+    
+  
+    Account cloning
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_2_2_1_1_label" class="md-nav" data-md-level="4">
+<label class="md-nav__title" for="__nav_2_2_1_1">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    Account cloning
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_2_2_1_1_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_2_1_1_1" id="__nav_2_2_1_1_1_label" tabindex="0">
 <span class="md-ellipsis">
     
   
@@ -276,8 +340,8 @@
   </span>
 <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-expanded="true" aria-labelledby="__nav_2_1_1_label" class="md-nav" data-md-level="3">
-<label class="md-nav__title" for="__nav_2_1_1">
+<nav aria-expanded="true" aria-labelledby="__nav_2_2_1_1_1_label" class="md-nav" data-md-level="5">
+<label class="md-nav__title" for="__nav_2_2_1_1_1">
 <span class="md-nav__icon md-icon"></span>
             
   
@@ -532,11 +596,11 @@
 </nav>
 </li>
 <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-<a class="md-nav__link" href="../../../Personal%20site/Adding%20assets/Additional%20CSS/setup-material-mkdocs-insiders-tailwind/">
+<a class="md-nav__link" href="../../../Unfollowing%20unfollowers/Unfollowing_Nonfollower/">
 <span class="md-ellipsis">
     
   
-    Personal site
+    Unfollowing unfollowers
   
 
     
@@ -547,8 +611,14 @@
 </ul>
 </nav>
 </li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
 <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-<a class="md-nav__link" href="../../../../areas/Culture%20and%20the%20arts/Recreation%20and%20entertainment/Games/Video%20games/Video%20game%20hardware%20platforms/Cloud%20games/Netflix%20Gaming/202210200020%20Netflix%20Gaming%20Resources/">
+<a class="md-nav__link" href="../../../../../../areas/Culture%20and%20the%20arts/Recreation%20and%20entertainment/Games/Video%20games/Video%20game%20hardware%20platforms/Cloud%20games/Netflix%20Gaming/202210200020%20Netflix%20Gaming%20Resources/">
 <span class="md-ellipsis">
     
   
@@ -561,7 +631,7 @@
 </a>
 </li>
 <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-<a class="md-nav__link" href="../../../../blog/">
+<a class="md-nav__link" href="../../../../../../blog/">
 <span class="md-ellipsis">
     
   
@@ -910,8 +980,8 @@
 </span><span id="__span-7-2"><a href="#__codelineno-7-2" id="__codelineno-7-2" name="__codelineno-7-2"></a><span class="n">client</span><span class="o">.</span><span class="n">logout</span><span class="p">()</span>
 </span></code></pre></div>
 <h2 id="conclusion">Conclusion<a class="headerlink" href="#conclusion" title="Permanent link">¶</a></h2>
-<p><img alt="" src="../chrome_esWANpqp9C.png"/></p>
-<p>By following the above steps, one can efficiently download all media from a specific Instagram profile along with captions and hashtags, then store this data in a SQLite database. This will allow one to store the data we scrape from Instagram to later be uploaded to Truth Social. </p></div>
+<p><img alt="" src="../chrome_esWANpqp9C.png"/>
+By following the above steps, one can efficiently download all media from a specific Instagram profile along with captions and hashtags, then store this data in a SQLite database. This will allow one to store the data we scrape from Instagram to later be uploaded to Truth Social. </p></div>
 <form class="md-feedback" hidden="" name="feedback">
 <fieldset>
 <legend class="md-feedback__title">
@@ -945,7 +1015,7 @@
 </div>
 </fieldset>
 </form>
-<div class="git-info" style="font-size: 0.8em; text-align: right; margin-bottom: 10px;"><br/>Created 2023-10-12, Updated 2023-10-12<br/>Authors: <a href="https://github.com/harmindersinghnijjar/kb-blog-portfolio-mkdocs/blob/main/docs\projects\Instagram account cloning\Truth Social\Downloading_Media.md">me@harminder.dev</a> (1)</div>
+<div class="git-info" style="font-size: 0.8em; text-align: right; margin-bottom: 10px;"><br/>Created 2023-10-30, Updated 2023-10-30<br/>Authors: <a href="https://github.com/harmindersinghnijjar/kb-blog-portfolio-mkdocs/blob/main/docs\projects\Social media automation\Instagram\Account cloning\Truth Social\Downloading_Media.md">me@harminder.dev</a> (1)</div>
 <style>
                 .share-button:hover {
                     filter: brightness(1.2);
@@ -956,10 +1026,10 @@
                 }
             </style>
 <div class="share-buttons">
-<button class="share-button" onclick="window.open('https://twitter.com/intent/tweet?url=https://harminder.dev/projects/Instagram%20account%20cloning/Truth%20Social/Downloading_Media', 'TwitterShare', 'width=550,height=680,menubar=no,toolbar=no'); return false;" style="background-color: #1da1f2; color: white; padding: 5px 10px; border-radius: 5px; margin-right: 10px; cursor: pointer; display: flex; align-items: center;">
+<button class="share-button" onclick="window.open('https://twitter.com/intent/tweet?url=https://harminder.dev/projects/Social%20media%20automation/Instagram/Account%20cloning/Truth%20Social/Downloading_Media', 'TwitterShare', 'width=550,height=680,menubar=no,toolbar=no'); return false;" style="background-color: #1da1f2; color: white; padding: 5px 10px; border-radius: 5px; margin-right: 10px; cursor: pointer; display: flex; align-items: center;">
 <i class="fa-brands fa-twitter" style="margin-right: 5px;"></i> Tweet
                 </button>
-<button class="share-button" onclick="window.open('https://www.linkedin.com/shareArticle?url=https://harminder.dev/projects/Instagram%20account%20cloning/Truth%20Social/Downloading_Media', 'LinkedinShare', 'width=550,height=730,menubar=no,toolbar=no'); return false;" style="background-color: #0077b5; color: white; padding: 5px 10px; border-radius: 5px; cursor: pointer; display: flex; align-items: center;">
+<button class="share-button" onclick="window.open('https://www.linkedin.com/shareArticle?url=https://harminder.dev/projects/Social%20media%20automation/Instagram/Account%20cloning/Truth%20Social/Downloading_Media', 'LinkedinShare', 'width=550,height=730,menubar=no,toolbar=no'); return false;" style="background-color: #0077b5; color: white; padding: 5px 10px; border-radius: 5px; cursor: pointer; display: flex; align-items: center;">
 <i class="fa-brands fa-linkedin" style="margin-right: 5px;"></i> Share
                 </button>
 </div>
@@ -975,7 +1045,7 @@
 </main>
 <footer class="md-footer">
 <nav aria-label="Footer" class="md-footer__inner md-grid">
-<a aria-label="Previous: Harminder's Knowledge Base" class="md-footer__link md-footer__link--prev" href="../../../.." rel="prev">
+<a aria-label="Previous: Integrating Tailwind CSS with Material for MkDocs Insiders" class="md-footer__link md-footer__link--prev" href="../../../../../Personal%20site/Adding%20assets/Additional%20CSS/setup-material-mkdocs-insiders-tailwind/" rel="prev">
 <div class="md-footer__button md-icon">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
 </div>
@@ -984,7 +1054,7 @@
                 Previous
               </span>
 <div class="md-ellipsis">
-                Harminder's Knowledge Base
+                Integrating Tailwind CSS with Material for MkDocs Insiders
               </div>
 </div>
 </a>
@@ -1022,8 +1092,8 @@
 <div class="md-dialog" data-md-component="dialog">
 <div class="md-dialog__inner md-typeset"></div>
 </div>
-<script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.instant", "navigation.instant.prefetch", "navigation.top", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.footer", "navigation.indexes", "navigation.prune", "content.code.copy", "toc.follow", "search.suggest", "search.share", "content.tabs.link"], "search": "../../../../assets/javascripts/workers/search.f2da59ea.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
-<script src="../../../../assets/javascripts/bundle.6fc684e3.min.js"></script>
+<script id="__config" type="application/json">{"base": "../../../../../..", "features": ["navigation.instant", "navigation.instant.prefetch", "navigation.top", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.footer", "navigation.indexes", "navigation.prune", "content.code.copy", "toc.follow", "search.suggest", "search.share", "content.tabs.link"], "search": "../../../../../../assets/javascripts/workers/search.f2da59ea.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+<script src="../../../../../../assets/javascripts/bundle.6fc684e3.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 </body>
 </html>

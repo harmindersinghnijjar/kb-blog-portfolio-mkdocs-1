@@ -5,46 +5,51 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
-<meta content="I am currently working on this section. Please check back later." name="description"/>
+<meta content="Using Instagrapi (an unofficial Instagram API wrapper for Python), you can unfollow everyone who doesn't follow you back on Instagram. Here's a step-by-step guide on how to do it:" name="description"/>
 <meta content="Harminder Singh Nijjar" name="author"/>
-<link href="https://harminder.dev/projects/Instagram%20account%20cloning/Truth%20Social/Uploading_Media/" rel="canonical"/>
-<link href="../Downloading_Media/" rel="prev"/>
-<link href="../../../Personal%20site/Adding%20assets/Additional%20CSS/setup-material-mkdocs-insiders-tailwind/" rel="next"/>
-<link href="../../../../assets/images/favicon.png" rel="icon"/>
+<link href="https://harminder.dev/projects/Social%20media%20automation/Instagram/Unfollowing%20unfollowers/Unfollowing_Nonfollower/" rel="canonical"/>
+<link href="../../Account%20cloning/Truth%20Social/Uploading_Media/" rel="prev"/>
+<link href="../../../../../areas/Culture%20and%20the%20arts/Recreation%20and%20entertainment/Games/Video%20games/Video%20game%20hardware%20platforms/Cloud%20games/Netflix%20Gaming/202210200020%20Netflix%20Gaming%20Resources/" rel="next"/>
+<link href="../../../../../assets/images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.5.3, mkdocs-material-9.2.3+insiders-4.39.2" name="generator"/>
-<title>Uploading Media - Harminder Singh Nijjar</title>
-<link href="../../../../assets/stylesheets/main.b13eea88.min.css" rel="stylesheet"/>
-<link href="../../../../assets/stylesheets/palette.da3f46a0.min.css" rel="stylesheet"/>
+<title>Unfollowing Non-Followers on Instagram with Instagrapi - Harminder Singh Nijjar</title>
+<link href="../../../../../assets/stylesheets/main.b13eea88.min.css" rel="stylesheet"/>
+<link href="../../../../../assets/stylesheets/palette.da3f46a0.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
 <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
-<link href="../../../../assets/_mkdocstrings.css" rel="stylesheet"/>
-<link href="../../../../css/tailwind.css" rel="stylesheet"/>
+<link href="../../../../../assets/_mkdocstrings.css" rel="stylesheet"/>
+<link href="../../../../../css/tailwind.css" rel="stylesheet"/>
+<link href="../../../../../css/output.css" rel="stylesheet"/>
+<link href="../../../../../docs/stylesheets/tailwind.css" rel="stylesheet"/>
+<link href="../../../../../docs/stylesheets/output.css" rel="stylesheet"/>
+<link href="../../../../../src/styles.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons" rel="stylesheet"/>
 <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
 <link href="https://cdn.jsdelivr.net/npm/flowbite@1.0.0/dist/flowbite.min.css" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
-<script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+<script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
 <script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-X0B1C5DM9K"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-X0B1C5DM9K",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-X0B1C5DM9K",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
 <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
 <meta content="website" property="og:type">
-<meta content="Uploading Media - Harminder Singh Nijjar" property="og:title">
-<meta content="I am currently working on this section. Please check back later." property="og:description">
-<meta content="https://harminder.dev/assets/images/social/projects/Instagram%20account%20cloning/Truth%20Social/Uploading_Media.png" property="og:image">
+<meta content="Unfollowing Non-Followers on Instagram with Instagrapi - Harminder Singh Nijjar" property="og:title">
+<meta content="Using Instagrapi (an unofficial Instagram API wrapper for Python), you can unfollow everyone who doesn't follow you back on Instagram. Here's a step-by-step guide on how to do it:" property="og:description">
+<meta content="https://harminder.dev/assets/images/social/projects/Social%20media%20automation/Instagram/Unfollowing%20unfollowers/Unfollowing_Nonfollower.png" property="og:image">
 <meta content="image/png" property="og:image:type">
 <meta content="1200" property="og:image:width"/>
 <meta content="630" property="og:image:height"/>
-<meta content="https://harminder.dev/projects/Instagram%20account%20cloning/Truth%20Social/Uploading_Media/" property="og:url"/>
+<meta content="https://harminder.dev/projects/Social%20media%20automation/Instagram/Unfollowing%20unfollowers/Unfollowing_Nonfollower/" property="og:url"/>
 <meta content="summary_large_image" property="twitter:card"/>
-<meta content="Uploading Media - Harminder Singh Nijjar" property="twitter.title"/>
-<meta content="I am currently working on this section. Please check back later." property="twitter:description"/>
-<meta content="https://harminder.dev/assets/images/social/projects/Instagram%20account%20cloning/Truth%20Social/Uploading_Media.png" property="twitter:image"/>
-</meta></meta></meta></meta></meta><meta content="Uploading Media" name="title"/><meta content="website" property="og:type"/><meta content="https://harminder.dev/projects/Instagram%20account%20cloning/Truth%20Social/Uploading_Media" property="og:url"/><meta content="Uploading Media" property="og:title"/><meta content="I am currently working on this section. Please check back later." property="og:description"/><meta content="summary_large_image" property="twitter:card"/><meta content="https://harminder.dev/projects/Instagram%20account%20cloning/Truth%20Social/Uploading_Media" property="twitter:url"/><meta content="Uploading Media" property="twitter:title"/><meta content="I am currently working on this section. Please check back later." property="twitter:description"/></head>
+<meta content="Unfollowing Non-Followers on Instagram with Instagrapi - Harminder Singh Nijjar" property="twitter.title"/>
+<meta content="Using Instagrapi (an unofficial Instagram API wrapper for Python), you can unfollow everyone who doesn't follow you back on Instagram. Here's a step-by-step guide on how to do it:" property="twitter:description"/>
+<meta content="https://harminder.dev/assets/images/social/projects/Social%20media%20automation/Instagram/Unfollowing%20unfollowers/Unfollowing_Nonfollower.png" property="twitter:image"/>
+</meta></meta></meta></meta></meta><meta content="Unfollowing Non-Followers on Instagram with Instagrapi" name="title"/><meta content="website" property="og:type"/><meta content="https://harminder.dev/projects/Social%20media%20automation/Instagram/Unfollowing%20unfollowers/Unfollowing_Nonfollower" property="og:url"/><meta content="Unfollowing Non-Followers on Instagram with Instagrapi" property="og:title"/><meta content="Using Instagrapi (an unofficial Instagram API wrapper for Python), you can unfollow everyone who doesn't follow you back on Instagram. Here's a step-by-step guide on how to do it:" property="og:description"/><meta content="summary_large_image" property="twitter:card"/><meta content="https://harminder.dev/projects/Social%20media%20automation/Instagram/Unfollowing%20unfollowers/Unfollowing_Nonfollower" property="twitter:url"/><meta content="Unfollowing Non-Followers on Instagram with Instagrapi" property="twitter:title"/><meta content="Using Instagrapi (an unofficial Instagram API wrapper for Python), you can unfollow everyone who doesn't follow you back on Instagram. Here's a step-by-step guide on how to do it:" property="twitter:description"/></head>
 <body data-md-color-accent="indigo" data-md-color-primary="indigo" data-md-color-scheme="default" dir="ltr">
 <input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#uploading-media">
+<a class="md-skip" href="#unfollowing-non-followers-on-instagram-with-instagrapi">
           Skip to content
         </a>
 </div>
@@ -52,7 +57,7 @@
 </div>
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
 <nav aria-label="Header" class="md-header__inner md-grid">
-<a aria-label="Harminder Singh Nijjar" class="md-header__button md-logo" data-md-component="logo" href="../../../.." title="Harminder Singh Nijjar">
+<a aria-label="Harminder Singh Nijjar" class="md-header__button md-logo" data-md-component="logo" href="../../../../.." title="Harminder Singh Nijjar">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
 </a>
 <label class="md-header__button md-icon" for="__drawer">
@@ -68,7 +73,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              Uploading Media
+              Unfollowing Non-Followers on Instagram with Instagrapi
             
           </span>
 </div>
@@ -138,7 +143,7 @@
 <div class="md-grid">
 <ul class="md-tabs__list">
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="../../../..">
+<a class="md-tabs__link" href="../../../../..">
         
   
     
@@ -148,7 +153,7 @@
       </a>
 </li>
 <li class="md-tabs__item md-tabs__item--active">
-<a class="md-tabs__link" href="../Downloading_Media/">
+<a class="md-tabs__link" href="../../../../Personal%20site/Adding%20assets/Additional%20CSS/setup-material-mkdocs-insiders-tailwind/">
           
   
     
@@ -158,7 +163,7 @@
         </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="../../../../areas/Culture%20and%20the%20arts/Recreation%20and%20entertainment/Games/Video%20games/Video%20game%20hardware%20platforms/Cloud%20games/Netflix%20Gaming/202210200020%20Netflix%20Gaming%20Resources/">
+<a class="md-tabs__link" href="../../../../../areas/Culture%20and%20the%20arts/Recreation%20and%20entertainment/Games/Video%20games/Video%20game%20hardware%20platforms/Cloud%20games/Netflix%20Gaming/202210200020%20Netflix%20Gaming%20Resources/">
           
   
     
@@ -168,7 +173,7 @@
         </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="../../../../blog/">
+<a class="md-tabs__link" href="../../../../../blog/">
           
   
     
@@ -189,7 +194,7 @@
 <div class="md-sidebar__inner">
 <nav aria-label="Navigation" class="md-nav md-nav--primary md-nav--lifted" data-md-level="0">
 <label class="md-nav__title" for="__drawer">
-<a aria-label="Harminder Singh Nijjar" class="md-nav__button md-logo" data-md-component="logo" href="../../../.." title="Harminder Singh Nijjar">
+<a aria-label="Harminder Singh Nijjar" class="md-nav__button md-logo" data-md-component="logo" href="../../../../.." title="Harminder Singh Nijjar">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
 </a>
     Harminder Singh Nijjar
@@ -206,7 +211,7 @@
 </div>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../..">
+<a class="md-nav__link" href="../../../../..">
 <span class="md-ellipsis">
     
   
@@ -240,71 +245,108 @@
 
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" id="__nav_2_1" type="checkbox"/>
-<label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../../../Personal%20site/Adding%20assets/Additional%20CSS/setup-material-mkdocs-insiders-tailwind/">
 <span class="md-ellipsis">
     
   
-    Instagram account cloning
+    Personal site
   
 
     
   </span>
 <span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-expanded="true" aria-labelledby="__nav_2_1_label" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="__nav_2_1">
-<span class="md-nav__icon md-icon"></span>
-            
-  
-    Instagram account cloning
-  
-
-          </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" id="__nav_2_1_1" type="checkbox"/>
-<label class="md-nav__link" for="__nav_2_1_1" id="__nav_2_1_1_label" tabindex="0">
-<span class="md-ellipsis">
-    
-  
-    Truth Social
-  
-
-    
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-expanded="true" aria-labelledby="__nav_2_1_1_label" class="md-nav" data-md-level="3">
-<label class="md-nav__title" for="__nav_2_1_1">
-<span class="md-nav__icon md-icon"></span>
-            
-  
-    Truth Social
-  
-
-          </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../Downloading_Media/">
-<span class="md-ellipsis">
-    
-  
-    Downloading Media
-  
-
-    
-  </span>
 </a>
 </li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_2_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+<span class="md-ellipsis">
+    
+  
+    Social media automation
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_2_2_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_2">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    Social media automation
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_2_2_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_2_1" id="__nav_2_2_1_label" tabindex="0">
+<span class="md-ellipsis">
+    
+  
+    Instagram
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_2_2_1_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_2_2_1">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    Instagram
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../Account%20cloning/Truth%20Social/Downloading_Media/">
+<span class="md-ellipsis">
+    
+  
+    Account cloning
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_2_2_1_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_2_1_2" id="__nav_2_2_1_2_label" tabindex="0">
+<span class="md-ellipsis">
+    
+  
+    Unfollowing unfollowers
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_2_2_1_2_label" class="md-nav" data-md-level="4">
+<label class="md-nav__title" for="__nav_2_2_1_2">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    Unfollowing unfollowers
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item md-nav__item--active">
 <input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
 <label class="md-nav__link md-nav__link--active" for="__toc">
 <span class="md-ellipsis">
     
   
-    Uploading Media
+    Unfollowing Non-Followers on Instagram with Instagrapi
   
 
     
@@ -315,7 +357,7 @@
 <span class="md-ellipsis">
     
   
-    Uploading Media
+    Unfollowing Non-Followers on Instagram with Instagrapi
   
 
     
@@ -336,33 +378,68 @@
     </span>
 </a>
 </li>
-</ul>
-</nav>
-</li>
-</ul>
-</nav>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-<a class="md-nav__link" href="../../../Personal%20site/Adding%20assets/Additional%20CSS/setup-material-mkdocs-insiders-tailwind/">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#installation">
 <span class="md-ellipsis">
-    
-  
-    Personal site
-  
-
-    
-  </span>
-<span class="md-nav__icon md-icon"></span>
+      
+        Installation
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#creating-an-instagrapi-client">
+<span class="md-ellipsis">
+      
+        Creating an Instagrapi Client
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#getting-a-list-of-your-followers-and-following">
+<span class="md-ellipsis">
+      
+        Getting a List of Your Followers and Following
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#unfollowing-non-followers">
+<span class="md-ellipsis">
+      
+        Unfollowing Non-Followers
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#conclusion">
+<span class="md-ellipsis">
+      
+        Conclusion
+      
+    </span>
 </a>
 </li>
 </ul>
 </nav>
 </li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
 <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-<a class="md-nav__link" href="../../../../areas/Culture%20and%20the%20arts/Recreation%20and%20entertainment/Games/Video%20games/Video%20game%20hardware%20platforms/Cloud%20games/Netflix%20Gaming/202210200020%20Netflix%20Gaming%20Resources/">
+<a class="md-nav__link" href="../../../../../areas/Culture%20and%20the%20arts/Recreation%20and%20entertainment/Games/Video%20games/Video%20game%20hardware%20platforms/Cloud%20games/Netflix%20Gaming/202210200020%20Netflix%20Gaming%20Resources/">
 <span class="md-ellipsis">
     
   
@@ -375,7 +452,7 @@
 </a>
 </li>
 <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-<a class="md-nav__link" href="../../../../blog/">
+<a class="md-nav__link" href="../../../../../blog/">
 <span class="md-ellipsis">
     
   
@@ -410,6 +487,51 @@
     </span>
 </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#installation">
+<span class="md-ellipsis">
+      
+        Installation
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#creating-an-instagrapi-client">
+<span class="md-ellipsis">
+      
+        Creating an Instagrapi Client
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#getting-a-list-of-your-followers-and-following">
+<span class="md-ellipsis">
+      
+        Getting a List of Your Followers and Following
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#unfollowing-non-followers">
+<span class="md-ellipsis">
+      
+        Unfollowing Non-Followers
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#conclusion">
+<span class="md-ellipsis">
+      
+        Conclusion
+      
+    </span>
+</a>
+</li>
 </ul>
 </nav>
 </div>
@@ -417,9 +539,38 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<div><h1 id="uploading-media">Uploading Media<a class="headerlink" href="#uploading-media" title="Permanent link">¶</a></h1>
+<div><h1 id="unfollowing-non-followers-on-instagram-with-instagrapi">Unfollowing Non-Followers on Instagram with Instagrapi<a class="headerlink" href="#unfollowing-non-followers-on-instagram-with-instagrapi" title="Permanent link">¶</a></h1>
 <h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">¶</a></h2>
-<p>I am currently working on this section. Please check back later.</p></div>
+<p>Using Instagrapi (an unofficial Instagram API wrapper for Python), you can unfollow everyone who doesn't follow you back on Instagram. Here's a step-by-step guide on how to do it:</p>
+<p>Please note that using unofficial Instagram API wrappers is against Instagram's terms of service. This means that your account could be banned if you use this script. Use at your own risk.</p>
+<h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">¶</a></h2>
+<p>First, you need to install the Instagrapi library. You can do this using pip:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a>pip install instagrapi
+</span></code></pre></div>
+<h2 id="creating-an-instagrapi-client">Creating an Instagrapi Client<a class="headerlink" href="#creating-an-instagrapi-client" title="Permanent link">¶</a></h2>
+<p>Next, you need to create an Instagrapi client. You can do this by importing the Client class from the instagrapi library and creating an instance of this class:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="kn">from</span> <span class="nn">instagrapi</span> <span class="kn">import</span> <span class="n">Client</span>
+</span><span id="__span-1-2"><a href="#__codelineno-1-2" id="__codelineno-1-2" name="__codelineno-1-2"></a>
+</span><span id="__span-1-3"><a href="#__codelineno-1-3" id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="n">username</span> <span class="o">=</span> <span class="s1">'your_username'</span>
+</span><span id="__span-1-4"><a href="#__codelineno-1-4" id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="n">password</span> <span class="o">=</span> <span class="s1">'your_password'</span>
+</span><span id="__span-1-5"><a href="#__codelineno-1-5" id="__codelineno-1-5" name="__codelineno-1-5"></a>
+</span><span id="__span-1-6"><a href="#__codelineno-1-6" id="__codelineno-1-6" name="__codelineno-1-6"></a><span class="n">client</span> <span class="o">=</span> <span class="n">Client</span><span class="p">()</span>
+</span><span id="__span-1-7"><a href="#__codelineno-1-7" id="__codelineno-1-7" name="__codelineno-1-7"></a><span class="n">client</span><span class="o">.</span><span class="n">login</span><span class="p">(</span><span class="n">username</span><span class="p">,</span> <span class="n">password</span><span class="p">)</span>
+</span></code></pre></div>
+<h2 id="getting-a-list-of-your-followers-and-following">Getting a List of Your Followers and Following<a class="headerlink" href="#getting-a-list-of-your-followers-and-following" title="Permanent link">¶</a></h2>
+<p>To determine who doesn't follow you back on Instagram, you need to get a list of your followers and following. You can do this by calling the get_followers and get_following methods on your Instagrapi client:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="n">followers</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">user_followers</span><span class="p">(</span><span class="n">username</span><span class="p">)</span>
+</span><span id="__span-2-2"><a href="#__codelineno-2-2" id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="n">following</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">user_following</span><span class="p">(</span><span class="n">username</span><span class="p">)</span>
+</span></code></pre></div>
+<h2 id="unfollowing-non-followers">Unfollowing Non-Followers<a class="headerlink" href="#unfollowing-non-followers" title="Permanent link">¶</a></h2>
+<p>After getting a list of your followers and following, you need to determine who doesn't follow you back on Instagram. You can do this by looping through your following and checking if each user is in your followers. If they are not in your followers, then you need to unfollow them. You can do this by calling the unfollow method on your Instagrapi client:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a href="#__codelineno-3-1" id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="k">for</span> <span class="n">user</span> <span class="ow">in</span> <span class="n">following</span><span class="p">:</span>
+</span><span id="__span-3-2"><a href="#__codelineno-3-2" id="__codelineno-3-2" name="__codelineno-3-2"></a>    <span class="k">if</span> <span class="n">user</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">followers</span><span class="p">:</span>
+</span><span id="__span-3-3"><a href="#__codelineno-3-3" id="__codelineno-3-3" name="__codelineno-3-3"></a>        <span class="n">client</span><span class="o">.</span><span class="n">unfollow</span><span class="p">(</span><span class="n">user</span><span class="p">)</span>
+</span></code></pre></div>
+<h2 id="conclusion">Conclusion<a class="headerlink" href="#conclusion" title="Permanent link">¶</a></h2>
+<p>Using Instagrapi, you can unfollow everyone who doesn't follow you back on Instagram. This can be useful if you want to clean up your Instagram account and remove people who don't follow you back.</p>
+<p>You can find the full code for this script <a href="www.github.com/harmnindersinghnijjar/instagrapi-unfollow-nonfollowers">here</a>.</p></div>
 <form class="md-feedback" hidden="" name="feedback">
 <fieldset>
 <legend class="md-feedback__title">
@@ -453,7 +604,7 @@
 </div>
 </fieldset>
 </form>
-<div class="git-info" style="font-size: 0.8em; text-align: right; margin-bottom: 10px;"><br/>Created 2023-10-12, Updated 2023-10-12<br/>Authors: <a href="https://github.com/harmindersinghnijjar/kb-blog-portfolio-mkdocs/blob/main/docs\projects\Instagram account cloning\Truth Social\Uploading_Media.md">me@harminder.dev</a> (1)</div>
+<div class="git-info" style="font-size: 0.8em; text-align: right; margin-bottom: 10px;"><br/>Created 2023-10-30, Updated 2023-10-30<br/>Authors: <a href="https://github.com/harmindersinghnijjar/kb-blog-portfolio-mkdocs/blob/main/docs\projects\Social media automation\Instagram\Unfollowing unfollowers\Unfollowing_Nonfollower.md">me@harminder.dev</a> (1)</div>
 <style>
                 .share-button:hover {
                     filter: brightness(1.2);
@@ -464,10 +615,10 @@
                 }
             </style>
 <div class="share-buttons">
-<button class="share-button" onclick="window.open('https://twitter.com/intent/tweet?url=https://harminder.dev/projects/Instagram%20account%20cloning/Truth%20Social/Uploading_Media', 'TwitterShare', 'width=550,height=680,menubar=no,toolbar=no'); return false;" style="background-color: #1da1f2; color: white; padding: 5px 10px; border-radius: 5px; margin-right: 10px; cursor: pointer; display: flex; align-items: center;">
+<button class="share-button" onclick="window.open('https://twitter.com/intent/tweet?url=https://harminder.dev/projects/Social%20media%20automation/Instagram/Unfollowing%20unfollowers/Unfollowing_Nonfollower', 'TwitterShare', 'width=550,height=680,menubar=no,toolbar=no'); return false;" style="background-color: #1da1f2; color: white; padding: 5px 10px; border-radius: 5px; margin-right: 10px; cursor: pointer; display: flex; align-items: center;">
 <i class="fa-brands fa-twitter" style="margin-right: 5px;"></i> Tweet
                 </button>
-<button class="share-button" onclick="window.open('https://www.linkedin.com/shareArticle?url=https://harminder.dev/projects/Instagram%20account%20cloning/Truth%20Social/Uploading_Media', 'LinkedinShare', 'width=550,height=730,menubar=no,toolbar=no'); return false;" style="background-color: #0077b5; color: white; padding: 5px 10px; border-radius: 5px; cursor: pointer; display: flex; align-items: center;">
+<button class="share-button" onclick="window.open('https://www.linkedin.com/shareArticle?url=https://harminder.dev/projects/Social%20media%20automation/Instagram/Unfollowing%20unfollowers/Unfollowing_Nonfollower', 'LinkedinShare', 'width=550,height=730,menubar=no,toolbar=no'); return false;" style="background-color: #0077b5; color: white; padding: 5px 10px; border-radius: 5px; cursor: pointer; display: flex; align-items: center;">
 <i class="fa-brands fa-linkedin" style="margin-right: 5px;"></i> Share
                 </button>
 </div>
@@ -483,7 +634,7 @@
 </main>
 <footer class="md-footer">
 <nav aria-label="Footer" class="md-footer__inner md-grid">
-<a aria-label="Previous: Downloading Media" class="md-footer__link md-footer__link--prev" href="../Downloading_Media/" rel="prev">
+<a aria-label="Previous: Uploading Media" class="md-footer__link md-footer__link--prev" href="../../Account%20cloning/Truth%20Social/Uploading_Media/" rel="prev">
 <div class="md-footer__button md-icon">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
 </div>
@@ -492,17 +643,17 @@
                 Previous
               </span>
 <div class="md-ellipsis">
-                Downloading Media
+                Uploading Media
               </div>
 </div>
 </a>
-<a aria-label="Next: Integrating Tailwind CSS with Material for MkDocs Insiders" class="md-footer__link md-footer__link--next" href="../../../Personal%20site/Adding%20assets/Additional%20CSS/setup-material-mkdocs-insiders-tailwind/" rel="next">
+<a aria-label="Next: 202210200020 Netflix Gaming Resources" class="md-footer__link md-footer__link--next" href="../../../../../areas/Culture%20and%20the%20arts/Recreation%20and%20entertainment/Games/Video%20games/Video%20game%20hardware%20platforms/Cloud%20games/Netflix%20Gaming/202210200020%20Netflix%20Gaming%20Resources/" rel="next">
 <div class="md-footer__title">
 <span class="md-footer__direction">
                 Next
               </span>
 <div class="md-ellipsis">
-                Integrating Tailwind CSS with Material for MkDocs Insiders
+                202210200020 Netflix Gaming Resources
               </div>
 </div>
 <div class="md-footer__button md-icon">
@@ -530,8 +681,8 @@
 <div class="md-dialog" data-md-component="dialog">
 <div class="md-dialog__inner md-typeset"></div>
 </div>
-<script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.instant", "navigation.instant.prefetch", "navigation.top", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.footer", "navigation.indexes", "navigation.prune", "content.code.copy", "toc.follow", "search.suggest", "search.share", "content.tabs.link"], "search": "../../../../assets/javascripts/workers/search.f2da59ea.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
-<script src="../../../../assets/javascripts/bundle.6fc684e3.min.js"></script>
+<script id="__config" type="application/json">{"base": "../../../../..", "features": ["navigation.instant", "navigation.instant.prefetch", "navigation.top", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.footer", "navigation.indexes", "navigation.prune", "content.code.copy", "toc.follow", "search.suggest", "search.share", "content.tabs.link"], "search": "../../../../../assets/javascripts/workers/search.f2da59ea.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+<script src="../../../../../assets/javascripts/bundle.6fc684e3.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 </body>
 </html>
