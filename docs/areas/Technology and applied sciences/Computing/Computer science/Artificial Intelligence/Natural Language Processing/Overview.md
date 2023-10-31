@@ -1,0 +1,1 @@
+Natural Language Processing (NLP) is a subfield of Artificial Intelligence (AI) that deals with how computers can understand, interpret, and manipulate human language. NLP enables computers to automatically read and understand text, extract information, and perform tasks like translation, spell check, or topic classification.

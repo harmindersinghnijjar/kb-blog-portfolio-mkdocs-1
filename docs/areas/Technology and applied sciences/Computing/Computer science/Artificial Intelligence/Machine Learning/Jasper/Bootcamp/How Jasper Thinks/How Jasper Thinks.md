@@ -1,0 +1,1 @@
+Jasper produces high-quality content but sometimes goes off the rails, repeats himself, or produces content you don't like. To get the most out of using Jasper, you need to understand how he thinks. This will greatly improve your ability to get high-quality content and troubleshoot any low-quality content.
