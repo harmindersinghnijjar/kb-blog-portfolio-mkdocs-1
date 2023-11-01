@@ -25,30 +25,35 @@ theme:
   name: material
   # custom_dir: overrides
   features:
-  - navigation.instant
-  - navigation.instant.prefetch
-  - navigation.instant.progress
-  - navigation.top
-  - navigation.tracking
-  - navigation.tabs
-  - navigation.tabs.sticky
-  - navigation.footer
-  - navigation sidebar
-  - navigation.sidebar.sticky
-  - navigation.sidebar.expand
+  - navigation.instant # Enable instant loading i.e. load pages on hover
+  - navigation.instant.prefetch # Prefetch pages i.e. load pages in the background
+  - navigation.instant.progress # Add a progress bar to instant loaded pages
+  - navigation.top # Enable a top navigation bar
+  - navigation.tracking # Enable link tracking for Google Analytics
+  - navigation.tabs # Enable tabs
+  - navigation.tabs.sticky # Make tabs sticky
+  - navigation.footer # Enable a footer navigation
+  - navigation sidebar # Enable a sidebar navigation
+  - navigation.sidebar.sticky # Make sidebar navigation sticky
+  - navigation.sidebar.expand # Expand sidebar navigation on hover
   - navigation.sidebar.sections
-  # - navigation.sections
-  - navigation.path
+  - navigation.sections
+  # - navigation.path; Not advisable for long paths as it will take up too much space and create a horizontal scrollbar
   - navigation.indexes
   - navigation.prune
   - content.code.copy
   - toc.follow
+  - toc.integrate
+  - toc.lock
   - search.suggest
   - search.highlight
   - search.share
   - content.tabs.link
   - content.tooltips
-  
+  - blog
+  - social
+ 
+
 
   palette:
     # Palette toggle for automatic mode
@@ -75,23 +80,30 @@ plugins:
   - search:
        separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
   - mkdocstrings
-  - ultralytics
+  # - ultralytics
   - awesome-pages
   - social:
       cards_layout_options:
         background_color: '#151819'
         color: '#5FFFD7'
-  # - blog:
-  #     authors_file: '{blog}/.authors.yml'
-  #     post_url_max_categories: 2
-  #     post_url_format: "{date}/{slug}"
+  - blog:
+      authors_file: '{blog}/.authors.yml'
+      post_url_format: "{date}/{slug}"
+      post_url_max_categories: 2
   - mkdocs-video
+  - git-revision-date-localized:
+      enable_creation_date: true
+  # - git-committers:
+  #     repository: harmindersinghnijjar/kb-blog-portfolio-mkdocs
+  #     branch: main
+  - git-authors:
+      repository: harmindersinghnijjar/kb-blog-portfolio-mkdocs
+      branch: main
+      
 
-nav:
-  - Home: index.md
-  # - Projects: projects.md
-  # - Areas: areas.md
-  # - Blog: blog
+
+
+
 
 markdown_extensions:
   - admonition
@@ -151,6 +163,7 @@ extra:
           note: >-
             Thanks for your feedback! Help us improve this page by
             using our <a href="YOUR_FEEDBACK_URL" target="_blank" rel="noopener">feedback form</a>.
+
 
 
 
