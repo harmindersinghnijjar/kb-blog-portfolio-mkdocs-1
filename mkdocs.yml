@@ -16,6 +16,7 @@ extra_css:
   - 'https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css'
   - 'https://cdn.jsdelivr.net/npm/flowbite@1.0.0/dist/flowbite.min.css'
   - 'https://fonts.googleapis.com/icon?family=Material+Icons'
+  - css/custom.css
 
 
 extra_javascript:
@@ -23,7 +24,6 @@ extra_javascript:
 
 theme:
   name: material
-  # custom_dir: overrides
   features:
   - navigation.instant # Enable instant loading i.e. load pages on hover
   - navigation.instant.prefetch # Prefetch pages i.e. load pages in the background
@@ -34,8 +34,8 @@ theme:
   - navigation.tabs.sticky # Make tabs sticky
   - navigation.footer # Enable a footer navigation
   - navigation sidebar # Enable a sidebar navigation
-  - navigation.sidebar.sticky # Make sidebar navigation sticky
-  - navigation.sidebar.expand # Expand sidebar navigation on hover
+  - navigation.sidebar.sticky 
+  - navigation.sidebar.expand 
   - navigation.sidebar.sections
   - navigation.sections
   # - navigation.path; Not advisable for long paths as it will take up too much space and create a horizontal scrollbar
@@ -52,7 +52,6 @@ theme:
   - content.tooltips
   - blog
   - social
- 
 
 
   palette:
@@ -76,12 +75,19 @@ theme:
         icon: material/brightness-4
         name: Switch to system preference
 
+        
+
+
+
 plugins:
   - search:
        separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
   - mkdocstrings
-  # - ultralytics
-  - awesome-pages
+  - ultralytics:
+      default_image: "https://github.com/harmindersinghnijjar/face/blob/main/fotor_2023-8-13_21_49_31-fotor-2023081322615.png"
+      add_dates: false
+      add_authors: false
+  # - awesome-pages
   - social:
       cards_layout_options:
         background_color: '#151819'
@@ -96,13 +102,7 @@ plugins:
   # - git-committers:
   #     repository: harmindersinghnijjar/kb-blog-portfolio-mkdocs
   #     branch: main
-  - git-authors:
-      repository: harmindersinghnijjar/kb-blog-portfolio-mkdocs
-      branch: main
-      
-
-
-
+  - git-authors
 
 
 markdown_extensions:
@@ -164,6 +164,9 @@ extra:
             Thanks for your feedback! Help us improve this page by
             using our <a href="YOUR_FEEDBACK_URL" target="_blank" rel="noopener">feedback form</a>.
 
-
-
-
+nav:
+  - Home: index.md
+  - Areas:
+    - 'Areas': areas/index.md
+  - Blog:
+    - 'Blog': blog/index.md
