@@ -7,6 +7,7 @@ tags: [Instagram, Instagrapi, Python, Social Media, Automation]
 toc: true
 robots: noindex, nofollow
 hide: false
+permalink: /projects/Social-media-automation/Instagram/Unfollowing-non-followers/Unfollowing_non-followers/
 
 
 ---

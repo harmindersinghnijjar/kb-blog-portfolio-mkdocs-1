@@ -5,6 +5,7 @@ authors: [Harminder Singh Nijjar]
 date: 2023-11-05
 tags: [API, Text-to-Speech, ElevenLabs, Voices, Narration, Video Games]
 toc: true
+permalink: /projects/YouTube-clone/ElevenLabs_API_Voice_Options/
 ---
 
 ## Voice Profiles

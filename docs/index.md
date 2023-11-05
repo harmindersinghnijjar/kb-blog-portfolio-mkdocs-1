@@ -3,10 +3,12 @@ title: Harminder Singh Nijjar
 nav_order: 1
 description: Dive into Harminder's Knowledge Base, where I share insights, tutorials, and projects on a wide range of tech topics.
 keywords: tech tutorials, machine learning, web development, object detection, knowledge base
+tags: [machine learning, web development, object detection, knowledge base]
 hide:
   - navigation
   - toc
   - feedback
+permalink: /
 ---
 
 <!DOCTYPE html>

@@ -13,6 +13,7 @@ tags:
     Documentation
   ]
 toc: true
+permalink: /projects/Personal-site/Adding-assets/Additional-CSS/setup-material-mkdocs-insiders-tailwind/
 ---
 
 # Integrating Tailwind CSS with Material for MkDocs Insiders
