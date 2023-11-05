@@ -1,7 +1,7 @@
 ---
 title: Available Voices from ElevenLabs API
 description: Explore the diverse range of voices available from ElevenLabs API, perfect for various use cases like narration and video game character voices.
-authors: [Harminder Singh Nijjar]
+authors: [harmindersinghnijjar]
 date: 2023-11-05
 tags: [API, Text-to-Speech, ElevenLabs, Voices, Narration, Video Games]
 toc: true

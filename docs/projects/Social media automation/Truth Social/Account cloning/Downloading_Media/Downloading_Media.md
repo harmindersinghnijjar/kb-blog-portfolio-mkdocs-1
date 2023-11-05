@@ -1,7 +1,7 @@
 ---
 title: Downloading Media
 description: Learn how to download all media from a specific Instagram profile along with captions and hashtags, then store this data in a SQLite database.
-authors: [Harminder Singh Nijjar]
+authors: [harmindersinghnijjar]
 date: 2023-11-05
 tags: [Instagram, Instagrapi, Python, Social Media, Automation]
 toc: true

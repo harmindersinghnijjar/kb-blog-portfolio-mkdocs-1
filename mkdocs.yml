@@ -101,7 +101,7 @@ plugins:
         background_color: '#151819'
         color: '#5FFFD7'
   - blog:
-      authors_file: '{blog}/.authors.yml'
+      authors_file: 'blog/.authors.yaml'
       post_url_format: "{date}/{slug}"
       post_url_max_categories: 2
   - mkdocs-video

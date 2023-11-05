@@ -1,7 +1,8 @@
 ---
 title: Unfollow Non-Followers on Instagram Using Instagrapi
 description: Learn how to use Instagrapi to unfollow users who do not follow you back on Instagram.
-authors: [Harminder Singh Nijjar]
+authors: [harmindersinghnijjar]
+
 date: 2023-11-04
 tags: [Instagram, Instagrapi, Python, Social Media, Automation]
 toc: true

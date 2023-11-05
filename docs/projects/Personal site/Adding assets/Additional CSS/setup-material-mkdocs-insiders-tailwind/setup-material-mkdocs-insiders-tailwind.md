@@ -1,7 +1,7 @@
 ---
 title: Integrating Tailwind CSS with Material for MkDocs Insiders
 description: Combine the power of Tailwind CSS with Material for MkDocs Insiders to create a documentation site that not only has the robust features and beautiful design of Material but also the utility-first flexibility and customization of Tailwind CSS.
-authors: [Harminder Singh Nijjar]
+authors: [harmindersinghnijjar]
 date: 2023-11-05
 tags: [Tailwind CSS, Material for MkDocs, MkDocs, CSS, Web Development]
 toc: true
