@@ -11,9 +11,6 @@ site_description: >-
 # Copyright
 copyright: Copyright &copy; 2023 Harminder Singh Nijjar
 
-extra_html:
-  - |
-    <div id="giscus-widget"></div>
 
 
 extra_css:

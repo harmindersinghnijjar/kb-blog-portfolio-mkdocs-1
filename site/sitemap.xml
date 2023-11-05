@@ -631,12 +631,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://harminder.dev/blog/</loc>
-         <lastmod>2023-11-05</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://harminder.dev/blog/blog/</loc>
+         <loc>https://harminder.dev/blog/2023/11/05/osrs-money-making-guide-2024-how-to-earn-a-free-runescape-bond/</loc>
          <lastmod>2023-11-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -691,7 +686,27 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://harminder.dev/blog/</loc>
+         <lastmod>2023-11-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://harminder.dev/blog/archive/2023/</loc>
+         <lastmod>2023-11-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://harminder.dev/blog/category/osrs/</loc>
+         <lastmod>2023-11-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://harminder.dev/blog/category/money-making/</loc>
+         <lastmod>2023-11-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://harminder.dev/blog/category/guides/</loc>
          <lastmod>2023-11-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
