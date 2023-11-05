@@ -1,8 +1,9 @@
 ---
 hide:
-
 - toc
 - feedback
+
+permalink: /projects/
 ---
 <!DOCTYPE html>
 <html lang="en">

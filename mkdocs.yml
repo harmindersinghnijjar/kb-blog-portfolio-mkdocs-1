@@ -193,9 +193,10 @@ nav:
                   - Tailwind CSS: projects/Personal site/Adding assets/Additional CSS/setup-material-mkdocs-insiders-tailwind/setup-material-mkdocs-insiders-tailwind.md
       - Social media automation:
         - Instagram:
-          - Unfollowing non-followers: projects/Social media automation/Instagram/Unfollowing_non-followers/Unfollowing_non-followers.md
+          - Unfollowing non-followers: projects/Social media automation/Instagram/Unfollowing non-followers/Unfollowing_non-followers.md
         - Truth Social:
-          - Account cloning: projects/Social media automation/Truth Social/Account cloning/Account cloning.md
+          - Account cloning:
+            - Downloading media: projects/Social media automation/Truth Social/Account cloning/Downloading_Media/Downloading_Media.md
       - YouTube clone:
         - ElevenLabs API voice options: projects/YouTube clone/ElevenLabs_API_Voice_Options.md
 
