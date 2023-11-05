@@ -100,4 +100,3 @@ Logging out is a good practice to end the session, especially when running the s
 
 This script serves as a tool for managing your social media presence more effectively especially if you have a large following. It can be run periodically to keep your following list clean and balanced.
 
-

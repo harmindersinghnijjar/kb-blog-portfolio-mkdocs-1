@@ -8,6 +8,8 @@ toc: true
 robots: noindex, nofollow
 hide: false
 permalink: /projects/Social-media-automation/Instagram/Downloading-Media/
+comments: true
+
 ---
 # Downloading Media
 
@@ -166,5 +168,3 @@ client.logout()
 ![](chrome_esWANpqp9C.png)
 
 By following the above steps, one can efficiently download all media from a specific Instagram profile along with captions and hashtags, then store this data in a SQLite database. This will allow one to store the data we scrape from Instagram to later be uploaded to Truth Social. 
-
-

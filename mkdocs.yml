@@ -11,6 +11,11 @@ site_description: >-
 # Copyright
 copyright: Copyright &copy; 2023 Harminder Singh Nijjar
 
+extra_html:
+  - |
+    <div id="giscus-widget"></div>
+
+
 extra_css:
   - css/tailwind.css
   - 'https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css'
@@ -21,9 +26,11 @@ extra_css:
 
 extra_javascript:
   - 'https://cdn.jsdelivr.net/npm/apexcharts'
+  
 
 theme:
-  name: material
+  name: 'material'
+  custom_dir: overrides
   features:
     - announce.dismiss
     - content.action.edit
@@ -54,9 +61,6 @@ theme:
     # - toc.integrate
 
     
-
-
-
   palette:
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"

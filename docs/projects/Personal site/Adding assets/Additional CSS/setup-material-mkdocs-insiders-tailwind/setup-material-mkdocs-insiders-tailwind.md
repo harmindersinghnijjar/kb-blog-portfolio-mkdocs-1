@@ -14,6 +14,8 @@ tags:
   ]
 toc: true
 permalink: /projects/Personal-site/Adding-assets/Additional-CSS/setup-material-mkdocs-insiders-tailwind/
+comments: true
+
 ---
 
 # Integrating Tailwind CSS with Material for MkDocs Insiders
@@ -100,4 +102,3 @@ Remember to rebuild your Tailwind CSS and MkDocs project whenever you make chang
 You have now enhanced your MkDocs documentation with the styling power of Tailwind CSS. This integration allows for a highly customizable and unique design that can be easily modified to match your project's branding and design requirements. Enjoy the flexibility and control over your site's appearance!
 
 ---
-
