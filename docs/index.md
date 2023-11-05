@@ -107,7 +107,7 @@ hide:
       // Create a table to hold the skill rows
       const table = document.createElement('table');
       table.className = 'w-full min-w-full';
-
+      
       // Create and append the header row
       const headerRow = document.createElement('tr');
       headerRow.className = "border-b border-gray-600";

@@ -25,33 +25,36 @@ extra_javascript:
 theme:
   name: material
   features:
-  - navigation.instant # Enable instant loading i.e. load pages on hover
-  - navigation.instant.prefetch # Prefetch pages i.e. load pages in the background
-  - navigation.instant.progress # Add a progress bar to instant loaded pages
-  - navigation.top # Enable a top navigation bar
-  - navigation.tracking # Enable link tracking for Google Analytics
-  - navigation.tabs # Enable tabs
-  - navigation.tabs.sticky # Make tabs sticky
-  - navigation.footer # Enable a footer navigation
-  - navigation sidebar # Enable a sidebar navigation
-  - navigation.sidebar.sticky 
-  - navigation.sidebar.expand 
-  - navigation.sidebar.sections
-  - navigation.sections
-  # - navigation.path; Not advisable for long paths as it will take up too much space and create a horizontal scrollbar
-  - navigation.indexes
-  - navigation.prune
-  - content.code.copy
-  - toc.follow
-  - toc.integrate
-  - toc.lock
-  - search.suggest
-  - search.highlight
-  - search.share
-  - content.tabs.link
-  - content.tooltips
-  - blog
-  - social
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    - content.code.select
+    - navigation.top
+    # - content.tabs.link
+    - content.tooltips
+    - header.title
+    # - header.autohide (make sure this is commented out)
+    - navigation.expand
+    - navigation.footer
+    - navigation.indexes
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    # - navigation.prune
+    - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    # - toc.integrate
+
+    
+
 
 
   palette:
@@ -75,6 +78,8 @@ theme:
         icon: material/brightness-4
         name: Switch to system preference
 
+
+
         
 
 
@@ -82,12 +87,14 @@ theme:
 plugins:
   - search:
        separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+  - awesome-pages
   - mkdocstrings
   - ultralytics:
       default_image: "https://github.com/harmindersinghnijjar/face/blob/main/fotor_2023-8-13_21_49_31-fotor-2023081322615.png"
       add_dates: false
       add_authors: false
-  # - awesome-pages
+  - minify:
+      minify_html: true
   - social:
       cards_layout_options:
         background_color: '#151819'
@@ -105,45 +112,56 @@ plugins:
   - git-authors
 
 
+# Extensions
 markdown_extensions:
-  - admonition
   - abbr
+  - admonition
   - attr_list
-  - md_in_html
   - def_list
   - footnotes
-  - meta
+  - md_in_html
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
   - pymdownx.caret
-  - pymdownx.mark
-  - pymdownx.tilde
-  - pymdownx.critic
   - pymdownx.details
-  - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
-  - pymdownx.keys
-  # - pymdownx.magiclink:
-  #     user: hummingbot
-  #     repo: hummingbot
-  #     repo_url_shorthand: true
-  - pymdownx.smartsymbols
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
       pygments_lang_class: true
   - pymdownx.inlinehilite
-  - pymdownx.snippets
-  - pymdownx.superfences
-  - pymdownx.tabbed:
-      alternate_style: true
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      normalize_issue_symbols: true
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      extension_configs:
+        - pymdownx.snippets:
+            base_path: snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tasklist:
       custom_checkbox: true
-  - pymdownx.arithmatex:
-      generic: true
-  - toc:
-      permalink: true
-  - tables
-
+  - pymdownx.tilde
+  - pymdownx.snippets:
+      auto_append:
+        - includes/mkdocs.md
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
 
 extra:
   analytics:
@@ -164,9 +182,47 @@ extra:
             Thanks for your feedback! Help us improve this page by
             using our <a href="YOUR_FEEDBACK_URL" target="_blank" rel="noopener">feedback form</a>.
 
+# Page tree
 nav:
   - Home: index.md
+  - Projects:
+      - Current projects: projects/index.md
+      - Personal site: 
+          - Adding Assets:
+              - Additional CSS:
+                  - Tailwind CSS: projects/Personal site/Adding assets/Additional CSS/setup-material-mkdocs-insiders-tailwind/setup-material-mkdocs-insiders-tailwind.md
+      - Social media automation:
+        - Instagram:
+          - Unfollowing non-followers: projects/Social media automation/Instagram/Unfollowing_non-followers/Unfollowing_non-followers.md
+        - Truth Social:
+          - Account cloning: projects/Social media automation/Truth Social/Account cloning/Account cloning.md
+      - YouTube clone:
+        - ElevenLabs API voice options: projects/YouTube clone/ElevenLabs_API_Voice_Options.md
+
+    
   - Areas:
-    - 'Areas': areas/index.md
+    - setup/index.md
+    - Changing the colors: setup/changing-the-colors.md
+    - Changing the fonts: setup/changing-the-fonts.md
+    - Changing the language: setup/changing-the-language.md
+    - Changing the logo and icons: setup/changing-the-logo-and-icons.md
+    - Ensuring data privacy: setup/ensuring-data-privacy.md
+    - Setting up navigation: setup/setting-up-navigation.md
+    - Setting up site search: setup/setting-up-site-search.md
+    - Setting up site analytics: setup/setting-up-site-analytics.md
+    - Setting up social cards: setup/setting-up-social-cards.md
+    - Setting up a blog: setup/setting-up-a-blog.md
+    - Setting up tags: setup/setting-up-tags.md
+    - Setting up versioning: setup/setting-up-versioning.md
+    - Setting up the header: setup/setting-up-the-header.md
+    - Setting up the footer: setup/setting-up-the-footer.md
+    - Adding a git repository: setup/adding-a-git-repository.md
+    - Adding a comment system: setup/adding-a-comment-system.md
+    - Building an optimized site: setup/building-an-optimized-site.md
+    - Building for offline usage: setup/building-for-offline-usage.md
+    - Extensions:
+      - setup/extensions/index.md
+      - Python Markdown: setup/extensions/python-markdown.md
+      - Python Markdown Extensions: setup/extensions/python-markdown-extensions.md
   - Blog:
-    - 'Blog': blog/index.md
+    - blog/index.md

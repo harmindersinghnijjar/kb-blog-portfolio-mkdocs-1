@@ -1,2 +1,0 @@
-# CDWA CustomTkinter
-

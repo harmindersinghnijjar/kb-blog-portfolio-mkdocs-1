@@ -1,0 +1,5 @@
+nav:
+    - Home: index.md
+    - Blog: blog/blog.md
+    - Projects: projects/index.md
+    - Areas: areas/index.md
