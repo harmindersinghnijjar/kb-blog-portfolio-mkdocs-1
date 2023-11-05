@@ -8,8 +8,7 @@ toc: true
 robots: noindex, nofollow
 hide: false
 permalink: /projects/Social-media-automation/Instagram/Unfollowing-non-followers/Unfollowing_non-followers/
-
-
+comments: true
 ---
 # Unfollow Non-Followers on Instagram Using Instagrapi
 
@@ -99,4 +98,3 @@ Logging out is a good practice to end the session, especially when running the s
 ## Conclusion
 
 This script serves as a tool for managing your social media presence more effectively especially if you have a large following. It can be run periodically to keep your following list clean and balanced.
-

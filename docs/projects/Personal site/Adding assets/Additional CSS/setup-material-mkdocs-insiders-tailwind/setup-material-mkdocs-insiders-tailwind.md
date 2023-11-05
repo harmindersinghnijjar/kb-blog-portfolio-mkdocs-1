@@ -1,20 +1,13 @@
 ---
 title: Integrating Tailwind CSS with Material for MkDocs Insiders
-description: A comprehensive guide on incorporating Tailwind CSS into your Material for MkDocs Insiders theme for enhanced customization and styling capabilities.
+description: Combine the power of Tailwind CSS with Material for MkDocs Insiders to create a documentation site that not only has the robust features and beautiful design of Material but also the utility-first flexibility and customization of Tailwind CSS.
 authors: [Harminder Singh Nijjar]
 date: 2023-11-05
-tags:
-  [
-    MkDocs,
-    Material for MkDocs,
-    Tailwind CSS,
-    Customization,
-    Styling,
-    Documentation
-  ]
+tags: [Tailwind CSS, Material for MkDocs, MkDocs, CSS, Web Development]
 toc: true
 permalink: /projects/Personal-site/Adding-assets/Additional-CSS/setup-material-mkdocs-insiders-tailwind/
 comments: true
+
 
 ---
 
@@ -91,14 +84,6 @@ You can now use Tailwind CSS classes in your Markdown content or in any HTML tem
 
 To see the changes take effect, build your MkDocs project with:
 
-```bash
-mkdocs build
-```
+    mkdocs build
 
-Remember to rebuild your Tailwind CSS and MkDocs project whenever you make changes to your stylesheets or Tailwind configuration.
-
-## Conclusion
-
-You have now enhanced your MkDocs documentation with the styling power of Tailwind CSS. This integration allows for a highly customizable and unique design that can be easily modified to match your project's branding and design requirements. Enjoy the flexibility and control over your site's appearance!
-
----
+Note: Any changes made to Tailwind or your custom CSS require you to rebuild Tailwind CSS and then rebuild your MkDocs project.

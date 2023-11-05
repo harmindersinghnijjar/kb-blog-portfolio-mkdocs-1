@@ -6,6 +6,7 @@ date: 2023-11-05
 tags: [API, Text-to-Speech, ElevenLabs, Voices, Narration, Video Games]
 toc: true
 permalink: /projects/YouTube-clone/ElevenLabs_API_Voice_Options/
+comments: true
 ---
 
 ## Voice Profiles
@@ -92,8 +93,3 @@ Fin's voice, with its Irish accent and seasoned timbre, is perfectly suited for 
 - **Gender:** Male
 - **Use Case:** Video games
 - [Preview Voice](https://storage.googleapis.com/eleven-public-prod/premade/voices/D38z5RcWu1voky8WS1ja/a470ba64-1e72-46d9-ba9d-030c4155e2d2.mp3)
-
----
-
-<!-- Insert this at the bottom of your markdown files -->
-<div id="giscus-widget"></div>
