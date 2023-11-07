@@ -641,6 +641,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://harminder.dev/blog/2023/11/07/openais-november-devday-gpt4-turbo-multimodal-ai-capabilities-and-a-revenue-sharing-gpt-store/</loc>
+         <lastmod>2023-11-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://harminder.dev/blog/2023/11/05/osrs-money-making-guide-2024-how-to-earn-a-free-runescape-bond/</loc>
          <lastmod>2023-11-07</lastmod>
          <changefreq>daily</changefreq>
@@ -696,6 +701,16 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://harminder.dev/blog/category/ai/</loc>
+         <lastmod>2023-11-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://harminder.dev/blog/category/openai/</loc>
+         <lastmod>2023-11-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://harminder.dev/blog/category/api/</loc>
          <lastmod>2023-11-07</lastmod>
          <changefreq>daily</changefreq>
@@ -711,32 +726,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://harminder.dev/blog/category/voices/</loc>
-         <lastmod>2023-11-07</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://harminder.dev/blog/category/narration/</loc>
-         <lastmod>2023-11-07</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://harminder.dev/blog/category/video-games/</loc>
-         <lastmod>2023-11-07</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://harminder.dev/blog/category/osrs/</loc>
          <lastmod>2023-11-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://harminder.dev/blog/category/money-making/</loc>
-         <lastmod>2023-11-07</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://harminder.dev/blog/category/guides/</loc>
+         <loc>https://harminder.dev/blog/category/runescape/</loc>
          <lastmod>2023-11-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
