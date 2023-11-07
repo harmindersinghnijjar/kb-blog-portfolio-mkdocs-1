@@ -1,5 +1,5 @@
 ---
-title: Harminder Singh Nijjar
+title: Harminder's Knowledge Base
 authors: [harmindersinghnijjar]
 nav_order: 1
 description: Dive into Harminder's Knowledge Base, where I share insights, tutorials, and projects on a wide range of tech topics.
@@ -15,10 +15,6 @@ permalink: /
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Primary Meta Tags -->
-  <title>Harminder's Knowledge Base</title>
-  <meta name="title" content="Harminder's Knowledge Base">
-  <meta name="description" content="Dive into Harminder's Knowledge Base, where I share insights, tutorials, and projects on a wide range of tech topics.">
 
   <!-- Google icons -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">

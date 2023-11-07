@@ -28,6 +28,8 @@ extra_javascript:
 theme:
   name: 'material'
   custom_dir: overrides
+  favicon: resources/Images/favicon.png
+  # logo: 'https://raw.githubusercontent.com/harmindersinghnijjar/face/main/fotor_2023-8-13_21_49_31-fotor-2023081322615.png'
   features:
     - announce.dismiss
     - content.action.edit
@@ -198,8 +200,8 @@ nav:
         - Truth Social:
           - Account cloning:
             - Downloading media: projects/Social media automation/Truth Social/Account cloning/Downloading_Media/Downloading_Media.md
-      - YouTube clone:
-        - ElevenLabs API voice options: projects/YouTube clone/ElevenLabs_API_Voice_Options.md
+      - ElevenLabs YouTube Chrome extension:
+        - ElevenLabs Dubbing Extension: projects/ElevenLabs YouTube Chrome extension/Extension_101.md
 
     
   - Areas:

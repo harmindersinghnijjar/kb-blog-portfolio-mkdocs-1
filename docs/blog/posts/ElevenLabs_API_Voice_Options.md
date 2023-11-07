@@ -1,15 +1,18 @@
 ---
-title: Available Voices from ElevenLabs API
+title: Available Voices from ElevenLabs API in November 2023
 description: Explore the diverse range of voices available from ElevenLabs API, perfect for various use cases like narration and video game character voices.
 authors: [harmindersinghnijjar]
-date: 2023-11-05
+date: 2023-11-06
 tags: [API, Text-to-Speech, ElevenLabs, Voices, Narration, Video Games]
+categories: [API, Text-to-Speech, ElevenLabs, Voices, Narration, Video Games]
 toc: true
-permalink: /projects/YouTube-clone/ElevenLabs_API_Voice_Options/
 comments: true
 ---
 
 ## Voice Profiles
+
+<a href = "https://try.elevenlabs.io/c3516gvcplb3" target = "_blank" rel = "noopener noreferrer">ElevenLabs</a> API offers a diverse range of voices, perfect for various use cases like narration and video game character voices. The following voice profiles are available as of November 2023:
+
 
 ### Rachel: The Articulate Narrator
 
@@ -24,7 +27,7 @@ Rachel's voice carries a balance of clarity and tranquility, ideal for narration
 - **Age:** Young
 - **Gender:** Female
 - **Use Case:** Narration
-- [Preview Voice](https://storage.googleapis.com/eleven-public-prod/premade/voices/21m00Tcm4TlvDq8ikWAM/df6788f9-5c96-470d-8312-aab3b3d8f50a.mp3)
+- <a href= "https://storage.googleapis.com/eleven-public-prod/premade/voices/21m00Tcm4TlvDq8ikWAM/df6788f9-5c96-470d-8312-aab3b3d8f50a.mp3" target = "_blank" rel = "noopener noreferrer">Preview Voice</a>
 
 ---
 
@@ -41,7 +44,7 @@ Clyde offers a voice rich with experience, perfect for gritty narratives or char
 - **Age:** Middle-aged
 - **Gender:** Male
 - **Use Case:** Video games
-- [Preview Voice](https://storage.googleapis.com/eleven-public-prod/premade/voices/2EiwWnXFnvU5JabPnv8n/65d80f52-703f-4cae-a91d-75d4e200ed02.mp3)
+- <a href="https://storage.googleapis.com/eleven-public-prod/premade/voices/2EiwWnXFnvU5JabPnv8n/65d80f52-703f-4cae-a91d-75d4e200ed02.mp3" target = "_blank" rel = "noopener noreferrer">Preview Voice</a>
 
 ---
 
@@ -58,7 +61,7 @@ Domi's commanding voice is filled with confidence, suited for strong narrative l
 - **Age:** Young
 - **Gender:** Female
 - **Use Case:** Narration
-- [Preview Voice](https://storage.googleapis.com/eleven-public-prod/premade/voices/AZnzlk1XvdvUeBnXmlld/508e12d0-a7f7-4d86-a0d3-f3884ff353ed.mp3)
+- <a href="https://storage.googleapis.com/eleven-public-prod/premade/voices/AZnzlk1XvdvUeBnXmlld/508e12d0-a7f7-4d86-a0d3-f3884ff353ed.mp3" target = "_blank" rel = "noopener noreferrer">Preview Voice</a>
 
 ---
 
@@ -75,7 +78,7 @@ Dave's British-Essex accent adds a unique and engaging flavor, ideal for interac
 - **Age:** Young
 - **Gender:** Male
 - **Use Case:** Video games
-- [Preview Voice](https://storage.googleapis.com/eleven-public-prod/premade/voices/CYw3kZ02Hs0563khs1Fj/872cb056-45d3-419e-b5c6-de2b387a93a0.mp3)
+- <a href="https://storage.googleapis.com/eleven-public-prod/premade/voices/CYw3kZ02Hs0563khs1Fj/872cb056-45d3-419e-b5c6-de2b387a93a0.mp3" target = "_blank" rel = "noopener noreferrer">Preview Voice</a>
 
 ---
 
@@ -92,4 +95,4 @@ Fin's voice, with its Irish accent and seasoned timbre, is perfectly suited for 
 - **Age:** Old
 - **Gender:** Male
 - **Use Case:** Video games
-- [Preview Voice](https://storage.googleapis.com/eleven-public-prod/premade/voices/D38z5RcWu1voky8WS1ja/a470ba64-1e72-46d9-ba9d-030c4155e2d2.mp3)
+- <a href="https://storage.googleapis.com/eleven-public-prod/premade/voices/D38z5RcWu1voky8WS1ja/a470ba64-1e72-46d9-ba9d-030c4155e2d2.mp3" target = "_blank" rel = "noopener noreferrer">Preview Voice</a>
