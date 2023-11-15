@@ -626,11 +626,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://harminder.dev/blog/2023/11/14/building-an-indexing-pipeline-for-linkedin-skill-assessments-quizzes-repository/</loc>
-         <lastmod>2023-11-15</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://harminder.dev/blog/2023/11/06/available-voices-from-elevenlabs-api-in-november-2023/</loc>
          <lastmod>2023-11-15</lastmod>
          <changefreq>daily</changefreq>
@@ -642,6 +637,11 @@
     </url>
     <url>
          <loc>https://harminder.dev/blog/2023/11/05/osrs-money-making-guide-2024-how-to-earn-a-free-runescape-bond/</loc>
+         <lastmod>2023-11-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://harminder.dev/blog/2023/11/14/building-an-indexing-pipeline-for-linkedin-skill-assessments-quizzes-repository/</loc>
          <lastmod>2023-11-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
