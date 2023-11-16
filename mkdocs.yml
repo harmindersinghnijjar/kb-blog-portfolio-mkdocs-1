@@ -23,7 +23,7 @@ extra_css:
 
 extra_javascript:
   - 'https://cdn.jsdelivr.net/npm/apexcharts'
-  
+  - 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4024063910372726'  
 
 theme:
   name: 'material'
@@ -42,14 +42,12 @@ theme:
     - content.tooltips
     - header.title
     # - header.autohide (make sure this is commented out)
-    - navigation.expand
     - navigation.footer
     - navigation.indexes
     - navigation.instant
     - navigation.instant.prefetch
     - navigation.instant.progress
-    # - navigation.prune
-    - navigation.sections
+    # - navigation.prune 
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.tracking
@@ -165,6 +163,8 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
+  - attr_list
+  - md_in_html
 
 extra:
   analytics:
@@ -190,20 +190,33 @@ nav:
   - Home: index.md
   - Projects:
       - Current projects: projects/index.md
-      - Personal site: 
-          - Adding Assets:
-              - Additional CSS:
-                  - Tailwind CSS: projects/Personal site/Adding assets/Additional CSS/setup-material-mkdocs-insiders-tailwind/setup-material-mkdocs-insiders-tailwind.md
+      - Dubbing pipeline:
+        - Dub with ElevenLabs Google Chrome Extension: projects/Dubbing pipeline/dub_with_elevenlabs.md
+      - Midjourney Automation Bot:
+        - Wiki:
+          - Overview: projects/Midjourney Automation Bot/Wiki/Overview.md
+          - Features:
+            - Requested features:
+              - Automated Instagram image uploading with advanced captioning: projects/Midjourney Automation Bot/Wiki/Features/Requested features/Automated Instagram image uploading with advanced captioning.md
+              - Improved Documentation: projects/Midjourney Automation Bot/Wiki/Features/Requested features/Improved documentation.md
+      - RunescapeGPT:
+        - Wiki:
+          - Overview: projects/RunescapeGPT/Wiki/Overview.md
       - Social media automation:
         - Instagram:
           - Unfollowing non-followers: projects/Social media automation/Instagram/Unfollowing non-followers/Unfollowing_non-followers.md
         - Truth Social:
           - Account cloning:
             - Downloading media: projects/Social media automation/Truth Social/Account cloning/Downloading_Media/Downloading_Media.md
-      - ElevenLabs YouTube Chrome extension:
-        - ElevenLabs Dubbing Extension: projects/ElevenLabs YouTube Chrome extension/Extension_101.md
-
-    
+      - Websites:
+        - Vercel:
+          - GitBute:
+            - 3D GitHub Contributions: projects/Websites/Vercel/GitBute/3D GitHub Contributions/3D_GitHub_Contributions.md
+               
+        - MkDocs:
+          - Adding Assets:
+              - Additional CSS:
+                  - Tailwind CSS: projects/Websites/MkDocs/Knowledge base/Adding assets/Additional CSS/Tailwind CSS/setup-material-mkdocs-insiders-tailwind.md
   - Areas:
     - setup/index.md
     - Changing the colors: setup/changing-the-colors.md

@@ -51,7 +51,7 @@ Our initial step involves the careful selection of a profile to replicate. In th
 
 ## Creating a SQLite Database
 ### Installation
-SQLite is a relational database management system that is embedded into the Python programming language. This database management system is well-documented and can be accessed [here](https://docs.python.org/3/library/sqlite3.html). We will be using this database management system to store the data we scrape from Instagram. The following sections will outline the steps required to create a SQLite database.
+SQLite is a relational database management system that is embedded into the Python programming language. This database management system is well-documented and can be accessed <a href='https://docs.python.org/3/library/sqlite3.html' target="_blank">here</a>. We will be using this database management system to store the data we scrape from Instagram. The following sections will outline the steps required to create a SQLite database.
 
 Install the "sqlite3" library if you haven't already. You can install it using pip:
     
@@ -96,7 +96,8 @@ conn.close()
 
 ## Replicating an Instagram Profile with Instagrapi
 ### Instagrapi Installation
-Instagrapi is a Python library that can be used to programmatically interact with Instagram. This library is well-documented and can be accessed [here](https://subzeroid.github.io/instagrapi/). We will be using this library to replicate our Instagram profile. The following sections will outline the steps required to replicate our Instagram profile.
+Instagrapi is a Python library that can be used to programmatically interact with Instagram. This library is well-documented and can be accessed <a href='https://subzeroid.github.io/instagrapi/' target="_blank">here</a>
+. We will be using this library to replicate our Instagram profile. The following sections will outline the steps required to replicate our Instagram profile.
 
 Install the "instagrapi" library if you haven't already. You can install it using pip:
     

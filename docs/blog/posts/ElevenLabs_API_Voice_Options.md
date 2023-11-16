@@ -4,7 +4,7 @@ description: Explore the diverse range of voices available from ElevenLabs API, 
 authors: [harmindersinghnijjar]
 date: 2023-11-06
 tags: [API, Text-to-Speech, ElevenLabs, Voices, Narration, Video Games]
-categories: [API, Text-to-Speech, ElevenLabs, Voices, Narration, Video Games]
+categories: [API, Text-to-Speech, ElevenLabs]
 toc: true
 comments: true
 ---
