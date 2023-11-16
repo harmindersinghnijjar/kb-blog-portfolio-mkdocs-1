@@ -721,6 +721,26 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://harminder.dev/blog/category/nvidia/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://harminder.dev/blog/category/ai/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://harminder.dev/blog/category/language-model/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://harminder.dev/blog/category/transformer/</loc>
+         <lastmod>2023-11-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://harminder.dev/blog/category/python/</loc>
          <lastmod>2023-11-16</lastmod>
          <changefreq>daily</changefreq>
@@ -747,11 +767,6 @@
     </url>
     <url>
          <loc>https://harminder.dev/blog/category/quizzes/</loc>
-         <lastmod>2023-11-16</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://harminder.dev/blog/category/ai/</loc>
          <lastmod>2023-11-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
