@@ -191,55 +191,56 @@ nav:
   - Projects:
       - Current projects: projects/index.md
       - Dubbing pipeline:
-        - Dub with ElevenLabs Google Chrome Extension: projects/Dubbing pipeline/dub_with_elevenlabs.md
+        - Dub with ElevenLabs Google Chrome Extension: projects/dubbing-pipeline/dub-with-elevenlabs.md
       - Midjourney Automation Bot:
         - Wiki:
-          - Overview: projects/Midjourney Automation Bot/Wiki/Overview.md
+          - Overview: projects/midjourney-automation-bot/wiki/overview.md
           - Features:
             - Requested features:
-              - Automated Instagram image uploading with advanced captioning: projects/Midjourney Automation Bot/Wiki/Features/Requested features/Automated Instagram image uploading with advanced captioning.md
-              - Improved Documentation: projects/Midjourney Automation Bot/Wiki/Features/Requested features/Improved documentation.md
+              - Automated Instagram image uploading with advanced captioning: projects/midjourney-automation-bot/wiki/features/requested-features/automated-instagram-image-uploading-with-advanced-captioning.md
+              - Improved Documentation: projects/midjourney-automation-bot/wiki/features/requested-features/improved-documentation.md
       - RunescapeGPT:
         - Wiki:
-          - Overview: projects/RunescapeGPT/Wiki/Overview.md
+          - Overview: projects/runescapegpt/wiki/overview.md
       - Social media automation:
         - Instagram:
-          - Unfollowing non-followers: projects/Social media automation/Instagram/Unfollowing non-followers/Unfollowing_non-followers.md
+          - Unfollowing non-followers: projects/social-media-automation/instagram/unfollowing-non-followers/unfollowing-non-followers.md
         - Truth Social:
           - Account cloning:
-            - Downloading media: projects/Social media automation/Truth Social/Account cloning/Downloading_Media/Downloading_Media.md
+            - Downloading media: projects/social-media-automation/truth-social/account-cloning/downloading-media/downloading-media.md
       - Websites:
         - Vercel:
           - GitBute:
-            - 3D GitHub Contributions: projects/Websites/Vercel/GitBute/3D GitHub Contributions/3D_GitHub_Contributions.md
+            - 3D GitHub Contributions: projects/websites/vercel/gitbute/3d-github-contributions/3d-github-contributions.md
                
         - MkDocs:
           - Adding Assets:
               - Additional CSS:
-                  - Tailwind CSS: projects/Websites/MkDocs/Knowledge base/Adding assets/Additional CSS/Tailwind CSS/setup-material-mkdocs-insiders-tailwind.md
-  - Areas:
-    - setup/index.md
-    - Changing the colors: setup/changing-the-colors.md
-    - Changing the fonts: setup/changing-the-fonts.md
-    - Changing the language: setup/changing-the-language.md
-    - Changing the logo and icons: setup/changing-the-logo-and-icons.md
-    - Ensuring data privacy: setup/ensuring-data-privacy.md
-    - Setting up navigation: setup/setting-up-navigation.md
-    - Setting up site search: setup/setting-up-site-search.md
-    - Setting up site analytics: setup/setting-up-site-analytics.md
-    - Setting up social cards: setup/setting-up-social-cards.md
-    - Setting up a blog: setup/setting-up-a-blog.md
-    - Setting up tags: setup/setting-up-tags.md
-    - Setting up versioning: setup/setting-up-versioning.md
-    - Setting up the header: setup/setting-up-the-header.md
-    - Setting up the footer: setup/setting-up-the-footer.md
-    - Adding a git repository: setup/adding-a-git-repository.md
-    - Adding a comment system: setup/adding-a-comment-system.md
-    - Building an optimized site: setup/building-an-optimized-site.md
-    - Building for offline usage: setup/building-for-offline-usage.md
-    - Extensions:
-      - setup/extensions/index.md
-      - Python Markdown: setup/extensions/python-markdown.md
-      - Python Markdown Extensions: setup/extensions/python-markdown-extensions.md
+                  - Tailwind CSS: projects/websites/mkdocs/knowledge-base/adding-assets/additional-css/tailwind-css/setup-material-mkdocs-insiders-tailwind.md
+  - Areas: 
+      - Areas of Interest: areas/index.md
+      - Culture and Arts:
+        - Recreation and entertainment:
+          - Games:
+            - Sports:
+              - Combat sports:
+                - Material arts:
+                  - Brazilian Jiu-Jitsu:
+                    - Overview: areas/culture-and-arts/recreation-and-entertainment/games/sports/combat-sports/material-arts/brazilian-jiu-jitsu.md     
+            - Video games:
+              - Video game hardware platforms:
+                - Cloud gaming:
+                  - Amazon Luna:
+                    - Overview: areas/culture-and-arts/recreation-and-entertainment/games/video-games/video-game-hardware-platforms/cloud-gaming/amazon-luna.md
+                  - Netflix Gaming:
+                    - Overview: areas/culture-and-arts/recreation-and-entertainment/games/video-games/video-game-hardware-platforms/cloud-gaming/netflix-gaming.md
+                  - Xbox Cloud Gaming:
+                    - Overview: areas/culture-and-arts/recreation-and-entertainment/games/video-games/video-game-hardware-platforms/cloud-gaming/xbox_cloud_gaming.md  
+          - Music:
+            - Lofi:
+              - Top 100: areas/culture-and-the-arts/recreation-and-entertainment/music/lofi/top-100-lofi-songs.md
   - Blog:
     - blog/index.md
+
+
+           
