@@ -191,32 +191,39 @@ nav:
   - Projects:
       - Current projects: projects/index.md
       - Dubbing pipeline:
-        - Dub with ElevenLabs Google Chrome Extension: projects/dubbing-pipeline/dub-with-elevenlabs.md
+        - Dub with ElevenLabs Google Chrome Extension: projects/dubbing_pipeline/dub_with_elevenlabs.md
       - Midjourney Automation Bot:
         - Wiki:
-          - Overview: projects/midjourney-automation-bot/wiki/overview.md
+          - Midjourney Automation Bot: projects/midjourney_automation_bot/wiki/midjourney_automation_bot_overview.md
           - Features:
             - Requested features:
-              - Automated Instagram image uploading with advanced captioning: projects/midjourney-automation-bot/wiki/features/requested-features/automated-instagram-image-uploading-with-advanced-captioning.md
-              - Improved Documentation: projects/midjourney-automation-bot/wiki/features/requested-features/improved-documentation.md
+              - Automated Instagram image uploading with advanced captioning: projects/midjourney_automation_bot/wiki/features/requested_features/automated_instagram_image_uploading_with_advanced_captioning.md
+              - Improved Documentation: projects/midjourney_automation_bot/wiki/features/requested_features/improved_documentation.md
       - RunescapeGPT:
         - Wiki:
-          - Overview: projects/runescapegpt/wiki/overview.md
+          - RunescapeGPT: projects/runescapegpt/wiki/runescapegpt_overview.md
       - Social media automation:
         - Instagram:
-          - Unfollowing non-followers: projects/social-media-automation/instagram/unfollowing-non-followers/unfollowing-non-followers.md
+          - Unfollowing non-followers: projects/social_media_automation/instagram/unfollowing_non_followers/unfollowing_non_followers.md
         - Truth Social:
           - Account cloning:
-            - Downloading media: projects/social-media-automation/truth-social/account-cloning/downloading-media/downloading-media.md
+            - Downloading media: projects/social_media_automation/truth_social/account_cloning/downloading_media/downloading_media.md
+      - Web scraping:
+        - Web scraping overview: projects/web_scraping/web_scraping_overview.md
+        - Facebook:
+          - Facebook Marketplace:
+            - Bright Data Facebook Marketplace Scraper: projects/web_scraping/facebook/facebook_marketplace/bright_data_facebook_marketplace_scraper.md
+            - Oxylabs Facebook Marketplace Scraper: projects/web_scraping/facebook/facebook_marketplace/oxylabs_facebook_marketplace_scraper.md
+            - Smartproxy Facebook Marketplace Scraper: projects/web_scraping/facebook/facebook_marketplace/smartproxy_facebook_marketplace_scraper.md
       - Websites:
         - Vercel:
           - GitBute:
-            - 3D GitHub Contributions: projects/websites/vercel/gitbute/3d-github-contributions/3d-github-contributions.md
+            - 3D GitHub Contributions: projects/websites/vercel/gitbute/3d_github_contributions/3d_github_contributions.md
                
         - MkDocs:
           - Adding Assets:
               - Additional CSS:
-                  - Tailwind CSS: projects/websites/mkdocs/knowledge-base/adding-assets/additional-css/tailwind-css/setup-material-mkdocs-insiders-tailwind.md
+                  - Tailwind CSS: projects/websites/mkdocs/knowledge_base/adding_assets/additional_css/tailwind_css/setup_material_mkdocs_insiders_tailwind.md
   - Areas: 
       - Areas of Interest: areas/index.md
       - Culture and Arts:
@@ -226,19 +233,19 @@ nav:
               - Combat sports:
                 - Material arts:
                   - Brazilian Jiu-Jitsu:
-                    - Overview: areas/culture-and-arts/recreation-and-entertainment/games/sports/combat-sports/material-arts/brazilian-jiu-jitsu.md     
+                    - Overview: areas/culture_and_arts/recreation_and_entertainment/games/sports/combat_sports/material_arts/brazilian_jiu_jitsu.md     
             - Video games:
               - Video game hardware platforms:
                 - Cloud gaming:
                   - Amazon Luna:
-                    - Overview: areas/culture-and-arts/recreation-and-entertainment/games/video-games/video-game-hardware-platforms/cloud-gaming/amazon-luna.md
+                    - Amazon Luna: areas/culture_and_arts/recreation_and_entertainment/games/video_games/video_game_hardware_platforms/cloud_gaming/amazon_luna.md
                   - Netflix Gaming:
-                    - Overview: areas/culture-and-arts/recreation-and-entertainment/games/video-games/video-game-hardware-platforms/cloud-gaming/netflix-gaming.md
+                    - Netflix Gaming: areas/culture_and_arts/recreation_and_entertainment/games/video_games/video_game_hardware_platforms/cloud_gaming/netflix_gaming.md
                   - Xbox Cloud Gaming:
-                    - Overview: areas/culture-and-arts/recreation-and-entertainment/games/video-games/video-game-hardware-platforms/cloud-gaming/xbox_cloud_gaming.md  
+                    - Xbox Cloud Gaming: areas/culture_and_arts/recreation_and_entertainment/games/video_games/video_game_hardware_platforms/cloud-gaming/xbox_cloud_gaming.md  
           - Music:
             - Lofi:
-              - Top 100: areas/culture-and-the-arts/recreation-and-entertainment/music/lofi/top-100-lofi-songs.md
+              - Top 100: areas/culture_and_the_arts/recreation_and_entertainment/music/lofi/top_100_lofi_songs.md
   - Blog:
     - blog/index.md
 

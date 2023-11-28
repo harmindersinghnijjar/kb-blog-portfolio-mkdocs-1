@@ -6,14 +6,15 @@ description: Harminder's current projects that have a specific deadline or proje
 keywords: machine learning, web development, object detection, knowledge base
 tags: [machine learning, web development, object detection, knowledge base]
 hide:
-  - toc
-  - feedback
+- toc
+- feedback
 permalink: /
 ---
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
   <!-- Google icons -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
@@ -25,60 +26,42 @@ permalink: /
 
   <!-- ApexCharts library -->
   <script src="https://cdn.jsdelivr.net/npm/apexcharts@latest/dist/apexcharts.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Custom styles -->
   <link rel="stylesheet" href="css/custom.css">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 <body>
-  <div class="flex flex-wrap -mx-4">
-    <!-- Each Row with a Project Card -->
-    <!-- Row 1: Dubbing Pipeline -->
-    <div class="w-full px-4 mb-4">
-      <div class="rounded-lg shadow-2xl hover:shadow-xl hover:-translate-y-1 transform transition bg-teal-100 p-8 text-center">
-        <h2 class="text-xl font-bold mb-4 text-teal-900">Dubbing Pipeline</h2>
-        <p class="text-teal-700 mb-4">
-          Optimizing voiceover workflows for content creators.
-        </p>
-      </div>
+    <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-4 p-4">
+        <!-- Project Card: Dubbing Pipeline -->
+        <div class="p-6 rounded-lg shadow-2xl hover:shadow-xl hover:-translate-y-1 transform transition">
+            <h5 class="text-xl font-bold mb-2">Dubbing Pipeline</h5>
+            <p class="">Optimizing voiceover workflows for content creators and viewers.</p>
+        </div>
+        <!-- Project Card: Midjourney Automation Bot -->
+        <div class="p-6 rounded-lg shadow-2xl hover:shadow-xl hover:-translate-y-1 transform transition">
+            <h5 class="text-s font-bold mb-2">Midjourney Automation Bot</h5>
+            <p class="">Automating Midjourney image generation and social media posting.</p>
+        </div>
+        <!-- Project Card: RunescapeGPT -->
+        <div class="p-6 rounded-lg shadow-2xl hover:shadow-xl hover:-translate-y-1 transform transition">
+            <h5 class="text-xl font-bold mb-2">RunescapeGPT</h5>
+            <p class="">A Runescape ChatGPT Bot.</p>
+        </div>
+        <!-- Project Card: Social Media Automation -->
+        <div class="p-6 rounded-lg shadow-2xl hover:shadow-xl hover:-translate-y-1 transform transition">
+            <h5 class="text-s font-bold mb-2">Social Media Automation</h5>
+            <p class="">Automating social media posting and engagement.</p>
+        </div>
+        <!-- Project Card: Websites -->
+        <div class="p-6 rounded-lg shadow-2xl hover:shadow-xl hover:-translate-y-1 transform transition">
+            <h5 class="text-xl font-bold mb-2">Websites</h5>
+            <p class="">Building and maintaining websites with modern technologies.</p>
+        </div>
+        
+        <!-- Add more project cards as needed -->
     </div>
-    <!-- Row 2: Midjourney Automation Bot -->
-    <div class="w-full px-4 mb-4">
-      <div class="rounded-lg shadow-2xl hover:shadow-xl hover:-translate-y-1 transform transition bg-teal-100 p-8 text-center">
-        <h2 class="text-xl font-bold mb-4 text-teal-900">Midjourney Automation Bot</h2>
-        <p class="text-teal-700 mb-4">
-          Automating Midjourney image generation and social media posting.
-        </p>
-      </div>
-    </div>
-    <!-- Row 3: RunescapeGPT -->
-    <div class="w-full px-4 mb-4">
-      <div class="rounded-lg shadow-2xl hover:shadow-xl hover:-translate-y-1 transform transition bg-teal-100 p-8 text-center">
-        <h2 class="text-xl font-bold mb-4 text-teal-900">RunescapeGPT</h2>
-        <p class="text-teal-700 mb-4">
-          A Runescape ChatGPT Bot.
-        </p>
-      </div>
-    </div>
-    <!-- Row 4: Social Media Automation -->
-    <div class="w-full px-4 mb-4">
-      <div class="rounded-lg shadow-2xl hover:shadow-xl hover:-translate-y-1 transform transition bg-teal-100 p-8 text-center">
-        <h2 class="text-xl font-bold mb-4 text-teal-900">Social Media Automation</h2>
-        <p class="text-teal-700 mb-4">
-          Automating social media posting and engagement.
-        </p>
-      </div>
-    </div>
-    <!-- Row 5: Websites -->
-    <div class="w-full px-4 mb-4">
-      <div class="rounded-lg shadow-2xl hover:shadow-xl hover:-translate-y-1 transform transition bg-teal-100 p-8 text-center">
-        <h2 class="text-xl font-bold mb-4 text-teal-900">Websites</h2>
-        <p class="text-teal-700 mb-4">
-          Building and maintaining websites with modern technologies.
-        </p>
-      </div>
-    </div>
-  </div> <!-- End of .flex .flex-wrap -->
 </body>
-</html>

@@ -1,6 +1,6 @@
 ---
 title: NVIDIA's Nemotron-3-8B-Chat-SteerLM - Empowering Conversational AI with Stateful Text Generation
-very short description: NVIDIA's Nemotron-3-8B-Chat-SteerLM is an 8 billion-parameter generative language model based on the Nemotron-3-8B base model. It boasts customizability through the SteerLM method, allowing users to control model outputs dynamically during inference. This model is designed to generate text responses and code, making it a versatile choice for a range of applications.
+description: NVIDIA's Nemotron-3-8B-Chat-SteerLM is an 8 billion-parameter generative language model based on the Nemotron-3-8B base model. It boasts customizability through the SteerLM method, allowing users to control model outputs dynamically during inference. This model is designed to generate text responses and code, making it a versatile choice for a range of applications.
 authors: [harmindersinghnijjar]
 date: 2023-11-15
 tags: [NVIDIA, Nemotron-3-8B-Chat-SteerLM, AI, Language Model, Transformer, Stateful Text Generation, OpenAI, GPT]
