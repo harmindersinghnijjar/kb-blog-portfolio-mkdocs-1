@@ -10,10 +10,12 @@ comments: true
 ---
 
 # Transferring Script Files to Local System or VPS
+<img src="/resources/Images/ubuntu_kv3lhrpES3.png" alt="Transferring Script Files to Local System or VPS" width="100%">
 
 ## Local System Setup Process (Windows)
 
 This document outlines the process for transferring a Python script and setting it up on your local system. The script, in this case, is a Facebook Marketplace Scraper that allows you to collect and manage data from online listings.
+
 
 ### Prerequisites
 

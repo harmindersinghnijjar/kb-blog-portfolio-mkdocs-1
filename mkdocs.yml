@@ -28,8 +28,9 @@ extra_javascript:
 theme:
   name: 'material'
   custom_dir: overrides
-  favicon: resources/Images/favicon.png
-  # logo: 'https://raw.githubusercontent.com/harmindersinghnijjar/face/main/fotor_2023-8-13_21_49_31-fotor-2023081322615.png'
+  # favicon: resources/Images/favicon.png
+  favicon: 'https://raw.githubusercontent.com/harmindersinghnijjar/face/main/fotor_2023-8-13_21_49_31-fotor-		2023081322615.png'
+  logo: 'https://raw.githubusercontent.com/harmindersinghnijjar/face/main/fotor_2023-8-13_21_49_31-fotor-2023081322615.png'
   features:
     - announce.dismiss
     - content.action.edit
@@ -90,16 +91,16 @@ plugins:
        separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
   - awesome-pages
   - mkdocstrings
-  - ultralytics:
-      default_image: "https://github.com/harmindersinghnijjar/face/blob/main/fotor_2023-8-13_21_49_31-fotor-2023081322615.png"
-      add_dates: false
-      add_authors: false
+  # - ultralytics:
+  #     default_image: "https://github.com/harmindersinghnijjar/face/blob/main/fotor_2023-8-13_21_49_31-fotor-2023081322615.png"
+  #     add_dates: false
+  #     add_authors: false
   - minify:
       minify_html: true
-  - social:
-      cards_layout_options:
-        background_color: '#151819'
-        color: '#5FFFD7'
+  # - social:
+  #     cards_layout_options:
+  #       background_color: '#151819'
+  #       color: '#5FFFD7'
   - blog:
       authors_file: 'blog/.authors.yaml'
       post_url_format: "{date}/{slug}"
