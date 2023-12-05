@@ -606,7 +606,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://harminder.dev/blog/2023/11/04/automating-dvr-surveillance-feed-analysis-using-selenium-and-python/</loc>
+         <loc>https://harminder.dev/blog/2023/12/04/automating-dvr-surveillance-feed-analysis-using-selenium-and-python/</loc>
          <lastmod>2023-12-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -721,6 +721,31 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://harminder.dev/blog/category/selenium/</loc>
+         <lastmod>2023-12-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://harminder.dev/blog/category/python/</loc>
+         <lastmod>2023-12-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://harminder.dev/blog/category/computer-vision/</loc>
+         <lastmod>2023-12-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://harminder.dev/blog/category/surveillance/</loc>
+         <lastmod>2023-12-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://harminder.dev/blog/category/dvr/</loc>
+         <lastmod>2023-12-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://harminder.dev/blog/category/productivity/</loc>
          <lastmod>2023-12-05</lastmod>
          <changefreq>daily</changefreq>
@@ -757,11 +782,6 @@
     </url>
     <url>
          <loc>https://harminder.dev/blog/category/facebook-marketplace-scraper/</loc>
-         <lastmod>2023-12-05</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://harminder.dev/blog/category/python/</loc>
          <lastmod>2023-12-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -897,26 +917,6 @@
     </url>
     <url>
          <loc>https://harminder.dev/blog/category/osrs/</loc>
-         <lastmod>2023-12-05</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://harminder.dev/blog/category/selenium/</loc>
-         <lastmod>2023-12-05</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://harminder.dev/blog/category/computer-vision/</loc>
-         <lastmod>2023-12-05</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://harminder.dev/blog/category/surveillance/</loc>
-         <lastmod>2023-12-05</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://harminder.dev/blog/category/dvr/</loc>
          <lastmod>2023-12-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
