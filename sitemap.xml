@@ -646,6 +646,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://harminder.dev/projects/ai_powered_property_surveillance/training/</loc>
+         <lastmod>2023-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://harminder.dev/projects/dubbing_pipeline/dub_with_elevenlabs/</loc>
          <lastmod>2023-12-10</lastmod>
          <changefreq>daily</changefreq>
