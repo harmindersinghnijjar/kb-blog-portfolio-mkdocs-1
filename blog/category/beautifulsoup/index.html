@@ -13,7 +13,7 @@
 <span class=n>logger</span> <span class=o>=</span> <span class=n>logging</span><span class=o>.</span><span class=n>getLogger</span><span class=p>(</span><span class=o>**</span><span class=n>name</span><span class=o>**</span><span class=p>)</span>
 <span class=n>logger</span><span class=o>.</span><span class=n>setLevel</span><span class=p>(</span><span class=n>logging</span><span class=o>.</span><span class=n>INFO</span><span class=p>)</span>
 
-    <span class=n>file_handler</span> <span class=o>=</span> <span class=n>logging</span><span class=o>.</span><span class=n>FileHandler</span><span class=p>(</span><span class=s2>"desi_serials_scraper.log"</span><span class=p>,</span> <span class=n>mode</span><span class=o>=</span><span class=s2>"a"</span><span class=p>)</span>
+    <span class=n>file_handler</span> <span class=o>=</span> <span class=n>logging</span><span class=o>.</span><span class=n>FileHandler</span><span class=p>(</span><span class=s2>"teri-meri-doriyaann-downloader.log"</span><span class=p>,</span> <span class=n>mode</span><span class=o>=</span><span class=s2>"a"</span><span class=p>)</span>
     <span class=n>log_format</span> <span class=o>=</span> <span class=n>logging</span><span class=o>.</span><span class=n>Formatter</span><span class=p>(</span>
         <span class=s2>"</span><span class=si>%(asctime)s</span><span class=s2> - </span><span class=si>%(name)s</span><span class=s2> - [</span><span class=si>%(levelname)s</span><span class=s2>] [</span><span class=si>%(pathname)s</span><span class=s2>:</span><span class=si>%(lineno)d</span><span class=s2>] - </span><span class=si>%(message)s</span><span class=s2> - [</span><span class=si>%(process)d</span><span class=s2>:</span><span class=si>%(thread)d</span><span class=s2>]"</span>
     <span class=p>)</span>
@@ -27,114 +27,105 @@
     <span class=k>return</span> <span class=n>logger</span>
 
 <span class=n>logger</span> <span class=o>=</span> <span class=n>setup_logger</span><span class=p>()</span>
-</code></pre></div> <h4 id=selenium-automation-class><a class=toclink href=../../2023/12/31/downloading-teri-meri-doriyaann-using-python-and-beautifulsoup/#selenium-automation-class>Selenium Automation Class</a></h4> <p>Selenium simulates browser interactions. The <code>SeleniumAutomation</code> class contains methods for opening web pages, extracting video links, and managing browser tasks.</p> <pre><code>```python
-from selenium import webdriver
+</code></pre></div> <h4 id=selenium-automation-class><a class=toclink href=../../2023/12/31/downloading-teri-meri-doriyaann-using-python-and-beautifulsoup/#selenium-automation-class>Selenium Automation Class</a></h4> <p>Selenium simulates browser interactions. The <code>SeleniumAutomation</code> class contains methods for opening web pages, extracting video links, and managing browser tasks.</p> <div class=highlight><pre><span></span><code><span class=kn>from</span> <span class=nn>selenium</span> <span class=kn>import</span> <span class=n>webdriver</span>
 
-# Define SeleniumAutomation class
-# Selenium Automation
-</code></pre> <p>class SeleniumAutomation: def <strong>init</strong>(self, driver): self.driver = driver</p> <pre><code>def open_target_page(self, url):
-    self.driver.get(url)
-    time.sleep(5)
+    <span class=c1># Selenium Automation</span>
 
+    <span class=k>class</span> <span class=nc>SeleniumAutomation</span><span class=p>:</span>
+    <span class=k>def</span> <span class=o>**</span><span class=n>init</span><span class=o>**</span><span class=p>(</span><span class=bp>self</span><span class=p>,</span> <span class=n>driver</span><span class=p>):</span>
+    <span class=bp>self</span><span class=o>.</span><span class=n>driver</span> <span class=o>=</span> <span class=n>driver</span>
 
-```
-</code></pre> <h4 id=extracting-video-links><a class=toclink href=../../2023/12/31/downloading-teri-meri-doriyaann-using-python-and-beautifulsoup/#extracting-video-links>Extracting Video Links</a></h4> <p>The <code>extract_video_links</code> method in the <code>SeleniumAutomation</code> class is crucial. It navigates web pages and extracts video URLs.</p> <pre><code>```python
-def extract_video_links(self):
-    results = {"videos": []}
-    try: # Current date in the desired format DD-Month-YYYY
-    current_date = datetime.datetime.now().strftime("%d-%B-%Y")
+        <span class=k>def</span> <span class=nf>open_target_page</span><span class=p>(</span><span class=bp>self</span><span class=p>,</span> <span class=n>url</span><span class=p>):</span>
+            <span class=bp>self</span><span class=o>.</span><span class=n>driver</span><span class=o>.</span><span class=n>get</span><span class=p>(</span><span class=n>url</span><span class=p>)</span>
+            <span class=n>time</span><span class=o>.</span><span class=n>sleep</span><span class=p>(</span><span class=mi>5</span><span class=p>)</span>
+</code></pre></div> <h4 id=extracting-video-links><a class=toclink href=../../2023/12/31/downloading-teri-meri-doriyaann-using-python-and-beautifulsoup/#extracting-video-links>Extracting Video Links</a></h4> <p>The <code>extract_video_links</code> method in the <code>SeleniumAutomation</code> class is crucial. It navigates web pages and extracts video URLs.</p> <div class=highlight><pre><span></span><code>    <span class=k>def</span> <span class=nf>extract_video_links</span><span class=p>(</span><span class=bp>self</span><span class=p>):</span>
+        <span class=n>results</span> <span class=o>=</span> <span class=p>{</span><span class=s2>"videos"</span><span class=p>:</span> <span class=p>[]}</span>
+        <span class=k>try</span><span class=p>:</span> <span class=c1># Current date in the desired format DD-Month-YYYY</span>
+        <span class=n>current_date</span> <span class=o>=</span> <span class=n>datetime</span><span class=o>.</span><span class=n>datetime</span><span class=o>.</span><span class=n>now</span><span class=p>()</span><span class=o>.</span><span class=n>strftime</span><span class=p>(</span><span class=s2>"</span><span class=si>%d</span><span class=s2>-%B-%Y"</span><span class=p>)</span>
 
-                link_selector = f'//*[@id="content"]/div[5]/article[1]/div[2]/span/h2/a'
-                if WebDriverWait(self.driver, 10).until(
-                    EC.element_to_be_clickable((By.XPATH, link_selector))
-                ):
-                    self.driver.find_element(By.XPATH, link_selector).click()
-                    time.sleep(30)  # Adjust the timing as needed
+                    <span class=n>link_selector</span> <span class=o>=</span> <span class=sa>f</span><span class=s1>'//*[@id="content"]/div[5]/article[1]/div[2]/span/h2/a'</span>
+                    <span class=k>if</span> <span class=n>WebDriverWait</span><span class=p>(</span><span class=bp>self</span><span class=o>.</span><span class=n>driver</span><span class=p>,</span> <span class=mi>10</span><span class=p>)</span><span class=o>.</span><span class=n>until</span><span class=p>(</span>
+                        <span class=n>EC</span><span class=o>.</span><span class=n>element_to_be_clickable</span><span class=p>((</span><span class=n>By</span><span class=o>.</span><span class=n>XPATH</span><span class=p>,</span> <span class=n>link_selector</span><span class=p>))</span>
+                    <span class=p>):</span>
+                        <span class=bp>self</span><span class=o>.</span><span class=n>driver</span><span class=o>.</span><span class=n>find_element</span><span class=p>(</span><span class=n>By</span><span class=o>.</span><span class=n>XPATH</span><span class=p>,</span> <span class=n>link_selector</span><span class=p>)</span><span class=o>.</span><span class=n>click</span><span class=p>()</span>
+                        <span class=n>time</span><span class=o>.</span><span class=n>sleep</span><span class=p>(</span><span class=mi>30</span><span class=p>)</span>  <span class=c1># Adjust the timing as needed</span>
 
-                    first_video_player = "/html/body/div[1]/div[2]/div/div/div[1]/div/article/div[3]/center/div/p[14]/a"
-                    second_video_player = "/html/body/div[1]/div[2]/div/div/div[1]/div/article/div[3]/center/div/p[12]/a"
+                        <span class=n>first_video_player</span> <span class=o>=</span> <span class=s2>"/html/body/div[1]/div[2]/div/div/div[1]/div/article/div[3]/center/div/p[14]/a"</span>
+                        <span class=n>second_video_player</span> <span class=o>=</span> <span class=s2>"/html/body/div[1]/div[2]/div/div/div[1]/div/article/div[3]/center/div/p[12]/a"</span>
 
-                    for player in [first_video_player, second_video_player]:
-                        if WebDriverWait(self.driver, 10).until(
-                            EC.element_to_be_clickable((By.XPATH, player))
-                        ):
-                            self.driver.find_element(By.XPATH, player).click()
-                            time.sleep(10)  # Adjust the timing as needed
-                            # Switch to the new tab that contains the video player
-                            self.driver.switch_to.window(self.driver.window_handles[1])
-                            elements = self.driver.find_elements(By.CSS_SELECTOR, "*")
-                            for element in elements:
-                                if element.tag_name == "iframe" and element.get_attribute("src"):
-                                    logger.info(f"Element: {element.get_attribute('outerHTML')}")
-                                    try:
-                                        video_url = element.get_attribute("src")
-                                    except Exception as e:
-                                        logger.error(f"Error getting video URL: {e}")
-                                        continue
+                        <span class=k>for</span> <span class=n>player</span> <span class=ow>in</span> <span class=p>[</span><span class=n>first_video_player</span><span class=p>,</span> <span class=n>second_video_player</span><span class=p>]:</span>
+                            <span class=k>if</span> <span class=n>WebDriverWait</span><span class=p>(</span><span class=bp>self</span><span class=o>.</span><span class=n>driver</span><span class=p>,</span> <span class=mi>10</span><span class=p>)</span><span class=o>.</span><span class=n>until</span><span class=p>(</span>
+                                <span class=n>EC</span><span class=o>.</span><span class=n>element_to_be_clickable</span><span class=p>((</span><span class=n>By</span><span class=o>.</span><span class=n>XPATH</span><span class=p>,</span> <span class=n>player</span><span class=p>))</span>
+                            <span class=p>):</span>
+                                <span class=bp>self</span><span class=o>.</span><span class=n>driver</span><span class=o>.</span><span class=n>find_element</span><span class=p>(</span><span class=n>By</span><span class=o>.</span><span class=n>XPATH</span><span class=p>,</span> <span class=n>player</span><span class=p>)</span><span class=o>.</span><span class=n>click</span><span class=p>()</span>
+                                <span class=n>time</span><span class=o>.</span><span class=n>sleep</span><span class=p>(</span><span class=mi>10</span><span class=p>)</span>  <span class=c1># Adjust the timing as needed</span>
+                                <span class=c1># Switch to the new tab that contains the video player</span>
+                                <span class=bp>self</span><span class=o>.</span><span class=n>driver</span><span class=o>.</span><span class=n>switch_to</span><span class=o>.</span><span class=n>window</span><span class=p>(</span><span class=bp>self</span><span class=o>.</span><span class=n>driver</span><span class=o>.</span><span class=n>window_handles</span><span class=p>[</span><span class=mi>1</span><span class=p>])</span>
+                                <span class=n>elements</span> <span class=o>=</span> <span class=bp>self</span><span class=o>.</span><span class=n>driver</span><span class=o>.</span><span class=n>find_elements</span><span class=p>(</span><span class=n>By</span><span class=o>.</span><span class=n>CSS_SELECTOR</span><span class=p>,</span> <span class=s2>"*"</span><span class=p>)</span>
+                                <span class=k>for</span> <span class=n>element</span> <span class=ow>in</span> <span class=n>elements</span><span class=p>:</span>
+                                    <span class=k>if</span> <span class=n>element</span><span class=o>.</span><span class=n>tag_name</span> <span class=o>==</span> <span class=s2>"iframe"</span> <span class=ow>and</span> <span class=n>element</span><span class=o>.</span><span class=n>get_attribute</span><span class=p>(</span><span class=s2>"src"</span><span class=p>):</span>
+                                        <span class=n>logger</span><span class=o>.</span><span class=n>info</span><span class=p>(</span><span class=sa>f</span><span class=s2>"Element: </span><span class=si>{</span><span class=n>element</span><span class=o>.</span><span class=n>get_attribute</span><span class=p>(</span><span class=s1>'outerHTML'</span><span class=p>)</span><span class=si>}</span><span class=s2>"</span><span class=p>)</span>
+                                        <span class=k>try</span><span class=p>:</span>
+                                            <span class=n>video_url</span> <span class=o>=</span> <span class=n>element</span><span class=o>.</span><span class=n>get_attribute</span><span class=p>(</span><span class=s2>"src"</span><span class=p>)</span>
+                                        <span class=k>except</span> <span class=ne>Exception</span> <span class=k>as</span> <span class=n>e</span><span class=p>:</span>
+                                            <span class=n>logger</span><span class=o>.</span><span class=n>error</span><span class=p>(</span><span class=sa>f</span><span class=s2>"Error getting video URL: </span><span class=si>{</span><span class=n>e</span><span class=si>}</span><span class=s2>"</span><span class=p>)</span>
+                                            <span class=k>continue</span>
 
-                                    self.driver.get(video_url)
-                                    elements = self.driver.find_elements(By.CSS_SELECTOR, "*")
-                                    for element in elements:
-                                        if element.tag_name == "video" and element.get_attribute("src") and element.get_attribute("src").endswith(".mp4"):
-                                            logger.info(f"Element: {element.get_attribute('outerHTML')}")
-                                            try:
-                                                video_url = element.get_attribute("src")
-                                            except Exception as e:
-                                                logger.error(f"Error getting video URL: {e}")
-                                                continue
+                                        <span class=bp>self</span><span class=o>.</span><span class=n>driver</span><span class=o>.</span><span class=n>get</span><span class=p>(</span><span class=n>video_url</span><span class=p>)</span>
+                                        <span class=n>elements</span> <span class=o>=</span> <span class=bp>self</span><span class=o>.</span><span class=n>driver</span><span class=o>.</span><span class=n>find_elements</span><span class=p>(</span><span class=n>By</span><span class=o>.</span><span class=n>CSS_SELECTOR</span><span class=p>,</span> <span class=s2>"*"</span><span class=p>)</span>
+                                        <span class=k>for</span> <span class=n>element</span> <span class=ow>in</span> <span class=n>elements</span><span class=p>:</span>
+                                            <span class=k>if</span> <span class=n>element</span><span class=o>.</span><span class=n>tag_name</span> <span class=o>==</span> <span class=s2>"video"</span> <span class=ow>and</span> <span class=n>element</span><span class=o>.</span><span class=n>get_attribute</span><span class=p>(</span><span class=s2>"src"</span><span class=p>)</span> <span class=ow>and</span> <span class=n>element</span><span class=o>.</span><span class=n>get_attribute</span><span class=p>(</span><span class=s2>"src"</span><span class=p>)</span><span class=o>.</span><span class=n>endswith</span><span class=p>(</span><span class=s2>".mp4"</span><span class=p>):</span>
+                                                <span class=n>logger</span><span class=o>.</span><span class=n>info</span><span class=p>(</span><span class=sa>f</span><span class=s2>"Element: </span><span class=si>{</span><span class=n>element</span><span class=o>.</span><span class=n>get_attribute</span><span class=p>(</span><span class=s1>'outerHTML'</span><span class=p>)</span><span class=si>}</span><span class=s2>"</span><span class=p>)</span>
+                                                <span class=k>try</span><span class=p>:</span>
+                                                    <span class=n>video_url</span> <span class=o>=</span> <span class=n>element</span><span class=o>.</span><span class=n>get_attribute</span><span class=p>(</span><span class=s2>"src"</span><span class=p>)</span>
+                                                <span class=k>except</span> <span class=ne>Exception</span> <span class=k>as</span> <span class=n>e</span><span class=p>:</span>
+                                                    <span class=n>logger</span><span class=o>.</span><span class=n>error</span><span class=p>(</span><span class=sa>f</span><span class=s2>"Error getting video URL: </span><span class=si>{</span><span class=n>e</span><span class=si>}</span><span class=s2>"</span><span class=p>)</span>
+                                                    <span class=k>continue</span>
 
-                                            logger.info(f"Video URL: {video_url}")
-                                            response = requests.get(video_url, stream=True)
-                                            with open(f"E:\\Plex\\Teri Meri Doriyaann\\{datetime.datetime.now().strftime('%m-%d-%Y')}.mp4", "wb") as f:
-                                                for chunk in response.iter_content(chunk_size=1024*1024):
-                                                    logger.info(f"Writing chunk {chunk}")
-                                                    if chunk:
-                                                        f.write(chunk)
-                                                        logger.info(f"Chunk {chunk} written")
-                                                        break
+                                                <span class=n>logger</span><span class=o>.</span><span class=n>info</span><span class=p>(</span><span class=sa>f</span><span class=s2>"Video URL: </span><span class=si>{</span><span class=n>video_url</span><span class=si>}</span><span class=s2>"</span><span class=p>)</span>
+                                                <span class=n>response</span> <span class=o>=</span> <span class=n>requests</span><span class=o>.</span><span class=n>get</span><span class=p>(</span><span class=n>video_url</span><span class=p>,</span> <span class=n>stream</span><span class=o>=</span><span class=kc>True</span><span class=p>)</span>
+                                                <span class=k>with</span> <span class=nb>open</span><span class=p>(</span><span class=sa>f</span><span class=s2>"E:</span><span class=se>\\</span><span class=s2>Plex</span><span class=se>\\</span><span class=s2>Teri Meri Doriyaann</span><span class=se>\\</span><span class=si>{</span><span class=n>datetime</span><span class=o>.</span><span class=n>datetime</span><span class=o>.</span><span class=n>now</span><span class=p>()</span><span class=o>.</span><span class=n>strftime</span><span class=p>(</span><span class=s1>'%m-</span><span class=si>%d</span><span class=s1>-%Y'</span><span class=p>)</span><span class=si>}</span><span class=s2>.mp4"</span><span class=p>,</span> <span class=s2>"wb"</span><span class=p>)</span> <span class=k>as</span> <span class=n>f</span><span class=p>:</span>
+                                                    <span class=k>for</span> <span class=n>chunk</span> <span class=ow>in</span> <span class=n>response</span><span class=o>.</span><span class=n>iter_content</span><span class=p>(</span><span class=n>chunk_size</span><span class=o>=</span><span class=mi>1024</span><span class=o>*</span><span class=mi>1024</span><span class=p>):</span>
+                                                        <span class=n>logger</span><span class=o>.</span><span class=n>info</span><span class=p>(</span><span class=sa>f</span><span class=s2>"Writing chunk </span><span class=si>{</span><span class=n>chunk</span><span class=si>}</span><span class=s2>"</span><span class=p>)</span>
+                                                        <span class=k>if</span> <span class=n>chunk</span><span class=p>:</span>
+                                                            <span class=n>f</span><span class=o>.</span><span class=n>write</span><span class=p>(</span><span class=n>chunk</span><span class=p>)</span>
+                                                            <span class=n>logger</span><span class=o>.</span><span class=n>info</span><span class=p>(</span><span class=sa>f</span><span class=s2>"Chunk </span><span class=si>{</span><span class=n>chunk</span><span class=si>}</span><span class=s2> written"</span><span class=p>)</span>
+                                                            <span class=k>break</span>
 
-            except Exception as e:
-                logger.error(f"Error in extract_video_links: {e}")
+                <span class=k>except</span> <span class=ne>Exception</span> <span class=k>as</span> <span class=n>e</span><span class=p>:</span>
+                    <span class=n>logger</span><span class=o>.</span><span class=n>error</span><span class=p>(</span><span class=sa>f</span><span class=s2>"Error in extract_video_links: </span><span class=si>{</span><span class=n>e</span><span class=si>}</span><span class=s2>"</span><span class=p>)</span>
 
-        def close_browser(self):
-            self.driver.quit()
+            <span class=k>def</span> <span class=nf>close_browser</span><span class=p>(</span><span class=bp>self</span><span class=p>):</span>
+                <span class=bp>self</span><span class=o>.</span><span class=n>driver</span><span class=o>.</span><span class=n>quit</span><span class=p>()</span>
+</code></pre></div> <h4 id=video-scraper-class><a class=toclink href=../../2023/12/31/downloading-teri-meri-doriyaann-using-python-and-beautifulsoup/#video-scraper-class>Video Scraper Class</a></h4> <p><code>VideoScraper</code> manages the scraping process, from initializing the web driver to saving the extracted video links.</p> <div class=highlight><pre><span></span><code>    <span class=c1># Video Scraper</span>
+    <span class=k>class</span> <span class=nc>VideoScraper</span><span class=p>:</span>
+    <span class=k>def</span> <span class=o>**</span><span class=n>init</span><span class=o>**</span><span class=p>(</span><span class=bp>self</span><span class=p>):</span>
+    <span class=bp>self</span><span class=o>.</span><span class=n>user</span> <span class=o>=</span> <span class=n>os</span><span class=o>.</span><span class=n>getlogin</span><span class=p>()</span>
+    <span class=bp>self</span><span class=o>.</span><span class=n>selenium</span> <span class=o>=</span> <span class=kc>None</span>
 
-```
-</code></pre> <h4 id=video-scraper-class><a class=toclink href=../../2023/12/31/downloading-teri-meri-doriyaann-using-python-and-beautifulsoup/#video-scraper-class>Video Scraper Class</a></h4> <p><code>VideoScraper</code> manages the scraping process, from initializing the web driver to saving the extracted video links.</p> <pre><code>```python
-# Video Scraper
-class VideoScraper:
-def **init**(self):
-self.user = os.getlogin()
-self.selenium = None
+        <span class=k>def</span> <span class=nf>setup_driver</span><span class=p>(</span><span class=bp>self</span><span class=p>):</span>
+            <span class=c1># Set up ChromeDriver service</span>
+            <span class=n>service</span> <span class=o>=</span> <span class=n>Service</span><span class=p>()</span>
+            <span class=n>options</span> <span class=o>=</span> <span class=n>webdriver</span><span class=o>.</span><span class=n>ChromeOptions</span><span class=p>()</span>
+            <span class=n>options</span><span class=o>.</span><span class=n>add_argument</span><span class=p>(</span><span class=sa>f</span><span class=s2>"--user-data-dir=C:</span><span class=se>\\</span><span class=s2>Users</span><span class=se>\\</span><span class=si>{</span><span class=bp>self</span><span class=o>.</span><span class=n>user</span><span class=si>}</span><span class=se>\\</span><span class=s2>AppData</span><span class=se>\\</span><span class=s2>Local</span><span class=se>\\</span><span class=s2>Google</span><span class=se>\\</span><span class=s2>Chrome</span><span class=se>\\</span><span class=s2>User Data"</span><span class=p>)</span>
+            <span class=n>options</span><span class=o>.</span><span class=n>add_argument</span><span class=p>(</span><span class=s2>"--profile-directory=Default"</span><span class=p>)</span>
+            <span class=k>return</span> <span class=n>webdriver</span><span class=o>.</span><span class=n>Chrome</span><span class=p>(</span><span class=n>service</span><span class=o>=</span><span class=n>service</span><span class=p>,</span> <span class=n>options</span><span class=o>=</span><span class=n>options</span><span class=p>)</span>
 
-    def setup_driver(self):
-        # Set up ChromeDriver service
-        service = Service()
-        options = webdriver.ChromeOptions()
-        options.add_argument(f"--user-data-dir=C:\\Users\\{self.user}\\AppData\\Local\\Google\\Chrome\\User Data")
-        options.add_argument("--profile-directory=Default")
-        return webdriver.Chrome(service=service, options=options)
+        <span class=k>def</span> <span class=nf>start_scraping</span><span class=p>(</span><span class=bp>self</span><span class=p>):</span>
+            <span class=k>try</span><span class=p>:</span>
+                <span class=bp>self</span><span class=o>.</span><span class=n>selenium</span> <span class=o>=</span> <span class=n>SeleniumAutomation</span><span class=p>(</span><span class=bp>self</span><span class=o>.</span><span class=n>setup_driver</span><span class=p>())</span>
+                <span class=bp>self</span><span class=o>.</span><span class=n>selenium</span><span class=o>.</span><span class=n>open_target_page</span><span class=p>(</span><span class=s2>"https://www.desi-serials.cc/watch-online/star-plus/teri-meri-doriyaann/"</span><span class=p>)</span>
+                <span class=n>videos</span> <span class=o>=</span> <span class=bp>self</span><span class=o>.</span><span class=n>selenium</span><span class=o>.</span><span class=n>extract_video_links</span><span class=p>()</span>
+                <span class=bp>self</span><span class=o>.</span><span class=n>save_videos</span><span class=p>(</span><span class=n>videos</span><span class=p>)</span>
+            <span class=k>finally</span><span class=p>:</span>
+                <span class=k>if</span> <span class=bp>self</span><span class=o>.</span><span class=n>selenium</span><span class=p>:</span>
+                    <span class=bp>self</span><span class=o>.</span><span class=n>selenium</span><span class=o>.</span><span class=n>close_browser</span><span class=p>()</span>
 
-    def start_scraping(self):
-        try:
-            self.selenium = SeleniumAutomation(self.setup_driver())
-            self.selenium.open_target_page("https://www.desi-serials.cc/watch-online/star-plus/teri-meri-doriyaann/")
-            videos = self.selenium.extract_video_links()
-            self.save_videos(videos)
-        finally:
-            if self.selenium:
-                self.selenium.close_browser()
-
-    def save_videos(self, videos):
-        with open("desi_serials_videos.json", "w", encoding="utf-8") as file:
-            json.dump(videos, file, ensure_ascii=False, indent=4)
-
-```
-</code></pre> <h4 id=running-the-scraper><a class=toclink href=../../2023/12/31/downloading-teri-meri-doriyaann-using-python-and-beautifulsoup/#running-the-scraper>Running the Scraper</a></h4> <p>The script execution brings together all the components of the scraping process.</p> <pre><code>```python
-if **name** == "**main**":
-    os.system("taskkill /im chrome.exe /f")
-    scraper = VideoScraper()
-    scraper.start_scraping()
-
-```
-</code></pre> <h3 id=conclusion><a class=toclink href=../../2023/12/31/downloading-teri-meri-doriyaann-using-python-and-beautifulsoup/#conclusion>Conclusion</a></h3> <p>This script demonstrates using Python's web scraping capabilities for specific content access. It highlights the use of Selenium for browser automation and BeautifulSoup for HTML parsing. While focused on a specific TV show, the methodology is adaptable for various web scraping tasks.</p> <p>Use such scripts responsibly and within legal and ethical boundaries. Happy scraping and coding!</p> <nav class=md-post__action> <a href=../../2023/12/31/downloading-teri-meri-doriyaann-using-python-and-beautifulsoup/ > Continue reading </a> </nav> </div> </article> <nav class=md-pagination> </nav> </div> </div> </div> <button class="md-top md-icon" data-md-component=top hidden type=button> <svg viewbox="0 0 24 24" xmlns=http://www.w3.org/2000/svg><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"></path></svg> Back to top </button> </main> <footer class=md-footer> <nav aria-label=Footer class="md-footer__inner md-grid"> <a aria-label="Previous: API" href=../api/ class="md-footer__link md-footer__link--prev"> <div class="md-footer__button md-icon"> <svg viewbox="0 0 24 24" xmlns=http://www.w3.org/2000/svg><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg> </div> <div class=md-footer__title> <span class=md-footer__direction> Previous </span> <div class=md-ellipsis> API </div> </div> </a> <a aria-label="Next: Computer Vision" href=../computer-vision/ class="md-footer__link md-footer__link--next"> <div class=md-footer__title> <span class=md-footer__direction> Next </span> <div class=md-ellipsis> Computer Vision </div> </div> <div class="md-footer__button md-icon"> <svg viewbox="0 0 24 24" xmlns=http://www.w3.org/2000/svg><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"></path></svg> </div> </a> </nav> <div class="md-footer-meta md-typeset"> <div class="md-footer-meta__inner md-grid"> <div class=md-copyright> <div class=md-copyright__highlight> Copyright © 2023 Harminder Singh Nijjar </div> Made with <a href=https://squidfunk.github.io/mkdocs-material/ rel=noopener target=_blank> Material for MkDocs </a> </div> </div> </div> </footer> </div> <div class=md-dialog data-md-component=dialog> <div class="md-dialog__inner md-typeset"></div> </div> <div class=md-progress data-md-component=progress role=progressbar></div> <script id=__config type=application/json>{"base": "../../..", "features": ["announce.dismiss", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.code.select", "navigation.top", "content.tooltips", "header.title", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script> <script src=../../../assets/javascripts/bundle.cd18aaf1.min.js></script> <script src=https://cdn.jsdelivr.net/npm/apexcharts></script> <script src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4024063910372726"></script> </body> </html>
+        <span class=k>def</span> <span class=nf>save_videos</span><span class=p>(</span><span class=bp>self</span><span class=p>,</span> <span class=n>videos</span><span class=p>):</span>
+            <span class=k>with</span> <span class=nb>open</span><span class=p>(</span><span class=s2>"desi_serials_videos.json"</span><span class=p>,</span> <span class=s2>"w"</span><span class=p>,</span> <span class=n>encoding</span><span class=o>=</span><span class=s2>"utf-8"</span><span class=p>)</span> <span class=k>as</span> <span class=n>file</span><span class=p>:</span>
+                <span class=n>json</span><span class=o>.</span><span class=n>dump</span><span class=p>(</span><span class=n>videos</span><span class=p>,</span> <span class=n>file</span><span class=p>,</span> <span class=n>ensure_ascii</span><span class=o>=</span><span class=kc>False</span><span class=p>,</span> <span class=n>indent</span><span class=o>=</span><span class=mi>4</span><span class=p>)</span>
+</code></pre></div> <h4 id=running-the-scraper><a class=toclink href=../../2023/12/31/downloading-teri-meri-doriyaann-using-python-and-beautifulsoup/#running-the-scraper>Running the Scraper</a></h4> <p>The script execution brings together all the components of the scraping process.</p> <div class=highlight><pre><span></span><code>    <span class=k>if</span> <span class=o>**</span><span class=n>name</span><span class=o>**</span> <span class=o>==</span> <span class=s2>"**main**"</span><span class=p>:</span>
+        <span class=n>os</span><span class=o>.</span><span class=n>system</span><span class=p>(</span><span class=s2>"taskkill /im chrome.exe /f"</span><span class=p>)</span>
+        <span class=n>scraper</span> <span class=o>=</span> <span class=n>VideoScraper</span><span class=p>()</span>
+        <span class=n>scraper</span><span class=o>.</span><span class=n>start_scraping</span><span class=p>()</span>
+</code></pre></div> <h3 id=conclusion><a class=toclink href=../../2023/12/31/downloading-teri-meri-doriyaann-using-python-and-beautifulsoup/#conclusion>Conclusion</a></h3> <p>This script demonstrates using Python's web scraping capabilities for specific content access. It highlights the use of Selenium for browser automation and BeautifulSoup for HTML parsing. While focused on a specific TV show, the methodology is adaptable for various web scraping tasks.</p> <p>Use such scripts responsibly and within legal and ethical boundaries. Happy scraping and coding!</p> <nav class=md-post__action> <a href=../../2023/12/31/downloading-teri-meri-doriyaann-using-python-and-beautifulsoup/ > Continue reading </a> </nav> </div> </article> <nav class=md-pagination> </nav> </div> </div> </div> <button class="md-top md-icon" data-md-component=top hidden type=button> <svg viewbox="0 0 24 24" xmlns=http://www.w3.org/2000/svg><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"></path></svg> Back to top </button> </main> <footer class=md-footer> <nav aria-label=Footer class="md-footer__inner md-grid"> <a aria-label="Previous: API" href=../api/ class="md-footer__link md-footer__link--prev"> <div class="md-footer__button md-icon"> <svg viewbox="0 0 24 24" xmlns=http://www.w3.org/2000/svg><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg> </div> <div class=md-footer__title> <span class=md-footer__direction> Previous </span> <div class=md-ellipsis> API </div> </div> </a> <a aria-label="Next: Computer Vision" href=../computer-vision/ class="md-footer__link md-footer__link--next"> <div class=md-footer__title> <span class=md-footer__direction> Next </span> <div class=md-ellipsis> Computer Vision </div> </div> <div class="md-footer__button md-icon"> <svg viewbox="0 0 24 24" xmlns=http://www.w3.org/2000/svg><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"></path></svg> </div> </a> </nav> <div class="md-footer-meta md-typeset"> <div class="md-footer-meta__inner md-grid"> <div class=md-copyright> <div class=md-copyright__highlight> Copyright © 2023 Harminder Singh Nijjar </div> Made with <a href=https://squidfunk.github.io/mkdocs-material/ rel=noopener target=_blank> Material for MkDocs </a> </div> </div> </div> </footer> </div> <div class=md-dialog data-md-component=dialog> <div class="md-dialog__inner md-typeset"></div> </div> <div class=md-progress data-md-component=progress role=progressbar></div> <script id=__config type=application/json>{"base": "../../..", "features": ["announce.dismiss", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.code.select", "navigation.top", "content.tooltips", "header.title", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.tabs", "navigation.tabs.sticky", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script> <script src=../../../assets/javascripts/bundle.cd18aaf1.min.js></script> <script src=https://cdn.jsdelivr.net/npm/apexcharts></script> <script src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4024063910372726"></script> </body> </html>
