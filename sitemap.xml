@@ -771,22 +771,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://harminder.dev/blog/category/microsoft-visual-studio-code/</loc>
-         <lastmod>2024-01-02</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://harminder.dev/blog/category/github-copilot/</loc>
          <lastmod>2024-01-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://harminder.dev/blog/category/evernote/</loc>
-         <lastmod>2024-01-02</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://harminder.dev/blog/category/kanbanote/</loc>
          <lastmod>2024-01-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
