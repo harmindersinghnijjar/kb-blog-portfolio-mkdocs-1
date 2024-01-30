@@ -631,7 +631,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://harminder.dev/blog/2024/01/30/setting-up-your-development-environment-for-dreambot-scripting/</loc>
+         <loc>https://harminder.dev/blog/2024/01/30/setting-up-your-development-environment-for-dreambot-scripting---intellij-idea/</loc>
          <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -772,6 +772,11 @@
     </url>
     <url>
          <loc>https://harminder.dev/blog/category/scripting/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://harminder.dev/blog/category/intellij-idea/</loc>
          <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
