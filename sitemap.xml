@@ -641,6 +641,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://harminder.dev/blog/2024/01/30/setting-up-runelite-for-building-with-intellij-idea/</loc>
+         <lastmod>2024-02-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://harminder.dev/blog/2023/12/03/productivity-tools-in-2024/</loc>
          <lastmod>2024-02-05</lastmod>
          <changefreq>daily</changefreq>
@@ -777,6 +782,21 @@
     </url>
     <url>
          <loc>https://harminder.dev/blog/category/intellij-idea/</loc>
+         <lastmod>2024-02-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://harminder.dev/blog/category/runelite/</loc>
+         <lastmod>2024-02-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://harminder.dev/blog/category/jdk-11/</loc>
+         <lastmod>2024-02-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://harminder.dev/blog/category/maven/</loc>
          <lastmod>2024-02-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
