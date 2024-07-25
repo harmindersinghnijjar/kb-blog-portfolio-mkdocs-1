@@ -45,13 +45,15 @@ permalink: /
       <div class="mb-4 p-8 rounded-lg shadow-2xl hover:shadow-xl hover:-translate-y-1 transform transition bg-teal-100 text-center">
         <h1 class="text-2xl font-bold mb-4 text-teal-900 hover:text-teal-600">Harminder's Knowledge Base</h1>
         <p class="text-teal-700 mb-4">
-          My knowledge base encompasses my work on projects involving object detection, single-board computers, RPA social media and web automation solutions, and more.
+          A repository of personal knowledge that I update from time to time when I find interesting information, code or go down a rabbit hole of learning.
+
         </p>
         <p class="text-teal-700 mb-4">
-          Some other areas of interest of mine include: intelligent single and multi-agent systems, cognitive frameworks, and productivity.
+          <!-- Some other areas of interest of mine include: intelligent single and multi-agent systems, cognitive frameworks, and productivity. -->
+          I'm currently looking into assest and inventory management systems, and how they can be improved using machine learning, autonmous ground vehicles and drones, home automation and CAD design for 3D printing.
         </p>
         <p class="text-teal-700 mb-4">
-          I also blog about my experiences and learnings.
+          I also blog about my experiences and learnings on a nearly daily basis as I find it to be a creative outlet, a way of documenting my journey and a way to stay motivated and accountable.
         </p>
         <div class="mt-6">
           <a href="https://www.linkedin.com/in/harmindersinghnijjar/" target="_blank" rel="noopener noreferrer" class="text-teal-500 hover:text-teal-600 hover:underline">You can reach out to me on LinkedIn.</a>
@@ -165,12 +167,12 @@ permalink: /
   }
 
   // Replace 'yourPlayerName' with the actual player name
-  fetchAndDisplayOSRSWeeklyGains('xogsherjattx');
+  fetchAndDisplayOSRSWeeklyGains('smfddumbho');
 
   // Add an image on the bottom of the card with the remaining height to fill the card
   const osrsWeeklyStatsGainedCard = document.getElementById('osrs-weekly-stats-gained-card');
   const osrsWeeklyStatsGainedCardImage = document.createElement('img');
-  osrsWeeklyStatsGainedCardImage.src = 'https://raw.githubusercontent.com/harmindersinghnijjar/face/main/fotor_2023-8-13_21_49_31-fotor-2023081322615.png';
+  osrsWeeklyStatsGainedCardImage.src = 'github.png';
 
   // Add the image to the card if there is extra space (typically on larger screens)
   if (osrsWeeklyStatsGainedCard.offsetHeight > 400) {

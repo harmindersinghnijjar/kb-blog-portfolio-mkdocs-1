@@ -6,4 +6,3 @@
 <br>
 ![Kanisan x Frad - Fireflies](../../../../../resources/Images/chrome_vXcIcQQsaq.png)
 
-3.

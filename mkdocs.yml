@@ -9,7 +9,7 @@ site_description: >-
   Harminder Singh Nijjar's personal website and blog.
 
 # Copyright
-copyright: Copyright &copy; 2023 Harminder Singh Nijjar
+copyright: Copyright &copy; 2024 Harminder Singh Nijjar
 
 
 
@@ -26,11 +26,11 @@ extra_javascript:
   - 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4024063910372726'  
 
 theme:
-  name: 'material'
+  name: material
   custom_dir: overrides
   # favicon: resources/Images/favicon.png
-  favicon: 'https://raw.githubusercontent.com/harmindersinghnijjar/face/main/fotor_2023-8-13_21_49_31-fotor-		2023081322615.png'
-  logo: 'https://raw.githubusercontent.com/harmindersinghnijjar/face/main/fotor_2023-8-13_21_49_31-fotor-2023081322615.png'
+  favicon: 'github.png'
+  logo: 'github.png'
   features:
     - announce.dismiss
     - content.action.edit
@@ -91,16 +91,27 @@ plugins:
        separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
   - awesome-pages
   - mkdocstrings
-  # - ultralytics:
-  #     default_image: "https://github.com/harmindersinghnijjar/face/blob/main/fotor_2023-8-13_21_49_31-fotor-2023081322615.png"
-  #     add_dates: false
-  #     add_authors: false
+  - ultralytics:
+      default_image: "github.png"
+      add_dates: false
+      add_authors: false
+      add_share_buttons: True
   - minify:
       minify_html: true
-  # - social:
-  #     cards_layout_options:
-  #       background_color: '#151819'
-  #       color: '#5FFFD7'
+  - social:
+      cards_layout_options:
+        background_color: '#151819'
+        color: '#5FFFD7'
+        font_family: 'Roboto'
+        font_size: '14px'
+        font_weight: '400'
+        text_align: 'center'
+        text_shadow: 'none'
+        text_shadow_color: '#000000'
+        text_shadow_offset_x: '0'
+        text_shadow_offset_y: '0'
+        text_shadow_radius: '0'
+        text_transform: 'none'
   - blog:
       authors_file: 'blog/.authors.yaml'
       post_url_format: "{date}/{slug}"
@@ -128,10 +139,6 @@ markdown_extensions:
       smart_enable: all
   - pymdownx.caret
   - pymdownx.details
-  - pymdownx.highlight:
-      anchor_linenums: true
-      line_spans: __span
-      pygments_lang_class: true
   - pymdownx.inlinehilite
   - pymdownx.keys
   - pymdownx.magiclink:
@@ -191,62 +198,69 @@ nav:
   - Home: index.md
   - Projects:
       - Current projects: projects/index.md
+      - AI-Powered Property Surveillance:
+        - Training YOLOV8 on DVR footage: projects/ai-powered-property-surveillance/training.md
       - Dubbing pipeline:
-        - Dub with ElevenLabs Google Chrome Extension: projects/dubbing_pipeline/dub_with_elevenlabs.md
+        - Dub with ElevenLabs Google Chrome Extension: projects/dubbing-pipeline/dub-with-elevenlabs.md
       - Midjourney Automation Bot:
         - Wiki:
-          - Midjourney Automation Bot: projects/midjourney_automation_bot/wiki/midjourney_automation_bot_overview.md
+          - Midjourney Automation Bot: projects/midjourney-automation-bot/wiki/midjourney-automation-bot-overview.md
           - Features:
             - Requested features:
-              - Automated Instagram image uploading with advanced captioning: projects/midjourney_automation_bot/wiki/features/requested_features/automated_instagram_image_uploading_with_advanced_captioning.md
-              - Improved Documentation: projects/midjourney_automation_bot/wiki/features/requested_features/improved_documentation.md
-      - RunescapeGPT:
-        - Wiki:
-          - RunescapeGPT: projects/runescapegpt/wiki/runescapegpt_overview.md
+              - Automated Instagram image uploading with advanced captioning: projects/midjourney-automation-bot/wiki/features/requested-features/automated-instagram-image-uploading-with-advanced-captioning.md
+              - Improved Documentation: projects/midjourney-automation-bot/wiki/features/requested-features/improved-documentation.md
+      - RAG AI Assistant:
+        - RAG AI Assistant: projects/rag-ai-assistant/rag-ai-assistant.md
+        - In-depth Technical Analysis: projects/rag-ai-assistant/technical-breakdown.md
       - Social media automation:
         - Instagram:
-          - Unfollowing non-followers: projects/social_media_automation/instagram/unfollowing_non_followers/unfollowing_non_followers.md
+          - Unfollowing non-followers: projects/social-media-automation/instagram/unfollowing-non-followers/unfollowing-non-followers.md
         - Truth Social:
           - Account cloning:
-            - Downloading media: projects/social_media_automation/truth_social/account_cloning/downloading_media/downloading_media.md
+            - Downloading media: projects/social-media-automation/truth-social/account-cloning/downloading-media/downloading-media.md
       - Web scraping:
-        - Web scraping overview: projects/web_scraping/web_scraping_overview.md
+        - Web scraping overview: projects/web-scraping/web-scraping-overview.md
         - Facebook:
           - Facebook Marketplace:
-            - Bright Data Facebook Marketplace Scraper: projects/web_scraping/facebook/facebook_marketplace/bright_data_facebook_marketplace_scraper.md
-            - Oxylabs Facebook Marketplace Scraper: projects/web_scraping/facebook/facebook_marketplace/oxylabs_facebook_marketplace_scraper.md
-            - Smartproxy Facebook Marketplace Scraper: projects/web_scraping/facebook/facebook_marketplace/smartproxy_facebook_marketplace_scraper.md
+            - Bright Data Facebook Marketplace Scraper: projects/web-scraping/facebook/facebook-marketplace/bright-data-facebook-marketplace-scraper.md
+            - Oxylabs Facebook Marketplace Scraper: projects/web-scraping/facebook/facebook-marketplace/oxylabs-facebook-marketplace-scraper.md
+            - Smartproxy Facebook Marketplace Scraper: projects/web-scraping/facebook/facebook-marketplace/smartproxy-facebook-marketplace-scraper.md
       - Websites:
         - Vercel:
           - GitBute:
-            - 3D GitHub Contributions: projects/websites/vercel/gitbute/3d_github_contributions/3d_github_contributions.md
+            - 3D GitHub Contributions: projects/websites/vercel/gitbute/3d-github-contributions/3d-github-contributions.md
                
         - MkDocs:
           - Adding Assets:
               - Additional CSS:
-                  - Tailwind CSS: projects/websites/mkdocs/knowledge_base/adding_assets/additional_css/tailwind_css/setup_material_mkdocs_insiders_tailwind.md
+                  - Tailwind CSS: projects/websites/mkdocs/knowledge-base/adding-assets/additional-css/tailwind-css/setup-material-mkdocs-insiders-tailwind/
   - Areas: 
       - Areas of Interest: areas/index.md
-      - Culture and Arts:
+      - Culture and arts:
         - Recreation and entertainment:
           - Games:
             - Sports:
               - Combat sports:
-                - Material arts:
-                  - Brazilian Jiu-Jitsu:
-                    - Overview: areas/culture_and_arts/recreation_and_entertainment/games/sports/combat_sports/material_arts/brazilian_jiu_jitsu.md     
+                - Martial arts:
+                  - Brazilian Jiu-Jitsu: areas/culture-and-the-arts/recreation-and-entertainment/games/sports/combat-sports/martial-arts/brazilian-jiu-jitsu/brazilian-jiu-jitsu.md     
             - Video games:
               - Video game hardware platforms:
                 - Cloud gaming:
-                  - Amazon Luna:
-                    - Amazon Luna: areas/culture_and_arts/recreation_and_entertainment/games/video_games/video_game_hardware_platforms/cloud_gaming/amazon_luna.md
-                  - Netflix Gaming:
-                    - Netflix Gaming: areas/culture_and_arts/recreation_and_entertainment/games/video_games/video_game_hardware_platforms/cloud_gaming/netflix_gaming.md
-                  - Xbox Cloud Gaming:
-                    - Xbox Cloud Gaming: areas/culture_and_arts/recreation_and_entertainment/games/video_games/video_game_hardware_platforms/cloud-gaming/xbox_cloud_gaming.md  
+                  - Amazon Luna: areas/culture-and-the-arts/recreation-and-entertainment/games/video-games/video-game-hardware-platforms/cloud-gaming/amazon-luna/amazon-luna.md
+                  - Netflix Gaming: areas/culture-and-the-arts/recreation-and-entertainment/games/video-games/video-game-hardware-platforms/cloud-gaming/netflix-gaming/netflix-gaming.md
+                  - Xbox Cloud Gaming: areas/culture-and-the-arts/recreation-and-entertainment/games/video-games/video-game-hardware-platforms/cloud-gaming/xbox-cloud-gaming/xbox-cloud-gaming.md
+                - Console gaming:
+                  - Xbox:
+                    - Xbox Adaptive Controller:
+                      - Charities:
+                        - AbleGamers:
+                          - Titan One: areas/culture-and-the-arts/recreation-and-entertainment/games/video-games/video-game-hardware-platforms/console-gaming/xbox-adaptive-controller/charities /the-ablegamers-foundation/titan-one.md
+                        - Warfighter Engaged: areas/culture-and-the-arts/recreation-and-entertainment/games/video-games/video-game-hardware-platforms/console-gaming/xbox-adaptive-controller/charities/warfighter--engaged.md
+                - Mobile gaming: areas/culture-and-the-arts/recreation-and-entertainment/games/video-games/video-game-hardware-platforms/mobile-gaming/mobile-games.md
+                - Web gaming: areas/culture-and-the-arts/recreation-and-entertainment/games/video-games/video-game-hardware-platforms/web-gaming/web.md
           - Music:
             - Lofi:
-              - Top 100: areas/culture_and_the_arts/recreation_and_entertainment/music/lofi/top_100_lofi_songs.md
+              - Top 100: areas/culture-and-the-arts/recreation-and-entertainment/music/lofi/top-100-lofi-songs.md
   - Blog:
     - blog/index.md
 
