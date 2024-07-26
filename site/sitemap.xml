@@ -671,72 +671,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://harminder.dev/projects/ai-powered-property-surveillance/training/</loc>
-         <lastmod>2024-07-26</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://harminder.dev/projects/dubbing-pipeline/dub-with-elevenlabs/</loc>
-         <lastmod>2024-07-26</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://harminder.dev/projects/midjourney-automation-bot/wiki/midjourney-automation-bot-overview/</loc>
-         <lastmod>2024-07-26</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://harminder.dev/projects/midjourney-automation-bot/wiki/features/requested-features/automated-instagram-image-uploading-with-advanced-captioning/</loc>
-         <lastmod>2024-07-26</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://harminder.dev/projects/midjourney-automation-bot/wiki/features/requested-features/improved-documentation/</loc>
-         <lastmod>2024-07-26</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://harminder.dev/projects/rag-ai-assistant/rag-ai-assistant/</loc>
-         <lastmod>2024-07-26</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://harminder.dev/projects/rag-ai-assistant/technical-breakdown/</loc>
-         <lastmod>2024-07-26</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://harminder.dev/projects/social-media-automation/instagram/unfollowing-non-followers/unfollowing-non-followers/</loc>
-         <lastmod>2024-07-26</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://harminder.dev/projects/social-media-automation/truth-social/account-cloning/downloading-media/downloading-media/</loc>
          <lastmod>2024-07-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://harminder.dev/projects/social-media-automation/truth-social/account-cloning/uploading-media/uploading-media/</loc>
-         <lastmod>2024-07-26</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://harminder.dev/projects/web-scraping/web-scraping-overview/</loc>
-         <lastmod>2024-07-26</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://harminder.dev/projects/web-scraping/facebook/facebook-marketplace/bright-data-facebook-marketplace-scraper/</loc>
-         <lastmod>2024-07-26</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://harminder.dev/projects/web-scraping/facebook/facebook-marketplace/oxylabs-facebook-marketplace-scraper/</loc>
-         <lastmod>2024-07-26</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://harminder.dev/projects/web-scraping/facebook/facebook-marketplace/smartproxy-facebook-marketplace-scraper/</loc>
          <lastmod>2024-07-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
