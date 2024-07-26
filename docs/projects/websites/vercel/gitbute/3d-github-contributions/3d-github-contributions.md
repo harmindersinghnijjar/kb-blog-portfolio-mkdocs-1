@@ -1,13 +1,14 @@
 ---
-title: Rendering 3D GitHub Contributions on AWS using Blender and AWS Lambda
-description: Creating a website that renders 3D GitHub contributions using Blender and AWS Lambda. 
+title: Rendering 3D Scenes on AWS using Blender and AWS Lambda
+description: Creating a website that renders 3D scenes using Blender and AWS Lambda.
 authors: [harmindersinghnijjar]
 tags:  [AWS, AWS Lambda, Blender, 3D Rendering, Python, Cloud Computing]
 toc: true
 comments: true
 ---
-# Rendering 3D GitHub Contributions on AWS
-![Bute: 3D GitHub Contributions](bute.png)
+# Rendering 3D Scenes on AWS
+![Bute: 3D Scenes](bute.png)
+
 
 
 ## Introduction
