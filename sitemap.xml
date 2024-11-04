@@ -56,6 +56,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://harminder.dev/blog/2024/11/03/review-of-sources-for-management-investigation-report/</loc>
+         <lastmod>2024-11-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://harminder.dev/blog/2024/11/03/qidi-plus-4-issues-and-request-for-replacement-or-refund/</loc>
          <lastmod>2024-11-04</lastmod>
          <changefreq>daily</changefreq>
@@ -217,6 +222,21 @@
     </url>
     <url>
          <loc>https://harminder.dev/blog/category/law-enforcement/</loc>
+         <lastmod>2024-11-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://harminder.dev/blog/category/management/</loc>
+         <lastmod>2024-11-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://harminder.dev/blog/category/literature-review/</loc>
+         <lastmod>2024-11-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://harminder.dev/blog/category/academic-writing/</loc>
          <lastmod>2024-11-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -507,6 +527,11 @@
     </url>
     <url>
          <loc>https://harminder.dev/blog/page/2/</loc>
+         <lastmod>2024-11-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://harminder.dev/blog/page/3/</loc>
          <lastmod>2024-11-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
