@@ -46,6 +46,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://harminder.dev/blog/2024/11/04/qidi-plus-4-winter-redemption-arc--removing-back-panel-and-ssr-check-update/</loc>
+         <lastmod>2024-11-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://harminder.dev/blog/2023/11/16/progress-log---runescapegpt/</loc>
          <lastmod>2024-11-04</lastmod>
          <changefreq>daily</changefreq>
@@ -211,6 +216,26 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://harminder.dev/blog/category/3d-printing/</loc>
+         <lastmod>2024-11-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://harminder.dev/blog/category/product-reviews/</loc>
+         <lastmod>2024-11-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://harminder.dev/blog/category/safety-concerns/</loc>
+         <lastmod>2024-11-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://harminder.dev/blog/category/community/</loc>
+         <lastmod>2024-11-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://harminder.dev/blog/category/criminal-justice/</loc>
          <lastmod>2024-11-04</lastmod>
          <changefreq>daily</changefreq>
@@ -237,21 +262,6 @@
     </url>
     <url>
          <loc>https://harminder.dev/blog/category/academic-writing/</loc>
-         <lastmod>2024-11-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://harminder.dev/blog/category/3d-printing/</loc>
-         <lastmod>2024-11-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://harminder.dev/blog/category/product-reviews/</loc>
-         <lastmod>2024-11-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://harminder.dev/blog/category/safety-concerns/</loc>
          <lastmod>2024-11-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
