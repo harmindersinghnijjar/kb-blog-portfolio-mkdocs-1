@@ -126,7 +126,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://harminder.dev/projects/2024/current_projects/</loc>
+         <loc>https://harminder.dev/projects/2025/current_projects/</loc>
+         <lastmod>2024-11-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://harminder.dev/projects/2025/pyosrs07/wiki/work_breakdown_structure/</loc>
          <lastmod>2024-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -202,6 +207,11 @@
     </url>
     <url>
          <loc>https://harminder.dev/projects/archived/2023/websites/vercel/gitbute/3d_github_contributions/3d_github_contributions/</loc>
+         <lastmod>2024-11-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://harminder.dev/projects/archived/2024/current_projects/</loc>
          <lastmod>2024-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
