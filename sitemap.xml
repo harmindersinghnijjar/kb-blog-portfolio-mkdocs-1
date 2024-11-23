@@ -26,6 +26,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://harminder.dev/blog/2024/11/23/setting-up-cameraui-on-docker-for-windows/</loc>
+         <lastmod>2024-11-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://harminder.dev/blog/2024/01/30/how-to-write-a-simple-woodcutting-script-using-dreambot-api-in-2024/</loc>
          <lastmod>2024-11-23</lastmod>
          <changefreq>daily</changefreq>
@@ -232,6 +237,21 @@
     </url>
     <url>
          <loc>https://harminder.dev/blog/archive/2023/</loc>
+         <lastmod>2024-11-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://harminder.dev/blog/category/docker/</loc>
+         <lastmod>2024-11-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://harminder.dev/blog/category/camera-monitoring/</loc>
+         <lastmod>2024-11-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://harminder.dev/blog/category/home-automation/</loc>
          <lastmod>2024-11-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
